@@ -1,0 +1,141 @@
+body { 
+    background-image:  url(../images/metal.png); /* Путь к фоновому рисунку */
+    background-repeat: repeat; 
+}
+
+header {
+    background:rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    position: fixed;
+    width: 4%;
+    min-width: 100px;
+    z-index: 2;
+    border-radius: 15px;
+    display: grid; 
+}
+
+.content {
+    border-style:double;
+    border-radius: 5px;
+    border-width: 3px;
+    background-color: #00000085;
+    margin: 2%;
+    padding: 5px 10px;
+}
+
+h2{
+    color: rgb(174, 255, 194);
+    font-family: 'Londrina Outline';
+    text-shadow: 
+    0 0 5px #6eff81;
+    white-space: nowrap;
+}
+p{
+    text-shadow:  0 0 1px #6eff81;
+    color: rgb(69, 211, 104);
+}
+.button {
+    background-color: #4caf4f00; 
+    border: 1px;
+    color: rgb(197, 255, 174);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #97dd9a;
+  }
+.button:hover{
+    text-shadow: 
+    0 0 5px #6eff81,
+    0 0 10px #6eff81,
+    0 0 20px #6eff81;
+    box-shadow: 
+    0 0 5px #6eff81,
+    0 0 10px #6eff81,
+    0 0 20px #6eff81;
+}
+.button:active{
+    background-color:rgb(69, 211, 104);
+    color: #000000;
+    text-shadow: none;
+}
+
+.fraction {
+    display: inline-table;
+    text-shadow:  0 0 1px #6eff81;
+    color: rgb(69, 211, 104);
+    width: min-content;
+    font-size: 20px;
+  }
+.numerator {
+    text-align: center;
+  }
+.denominator {
+    border-top-color: rgb(69, 211, 104);
+    border-top-style: groove;
+    text-align: center;
+}
+input[type=text] {
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(69, 211, 104);
+    color: rgb(69, 211, 104);
+  }
+input[type=email] {
+    background-color: transparent;
+    border-style: solid;
+    border-color: rgb(69, 211, 104);
+    color: rgb(69, 211, 104);
+  }
+  input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+  }
+  
+  /* appearance for checked radiobutton */
+  input[type="radio"]:checked {
+    background-color: rgb(69, 211, 104);
+  }
+  input[type="radio"]:hover {
+    box-shadow: 
+    0 0 5px #6eff81,
+    0 0 10px #6eff81,
+    0 0 20px #6eff81;
+  }
+  input[type="checkbox"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    background-color: #e7e6e7;
+  }
+  input[type="checkbox"]:checked {
+    background-color: rgb(69, 211, 104);
+  }
+  input[type="checkbox"]:hover {
+    box-shadow: 
+    0 0 5px #6eff81,
+    0 0 10px #6eff81,
+    0 0 20px #6eff81;
+  }
+
