@@ -42,7 +42,7 @@ $query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
 ('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr')";
 pg_query($query);
 
-$query = "SELECT * FROM answers WHERE token="$get["id"];
+$query = "SELECT * FROM answers WHERE token=".$get["id"];
 $answersss = pg_query($query);
 
 $query = "SELECT * FROM answers";
