@@ -64,6 +64,7 @@ pg_close($dbconn);
     <body>
      
         <div class="content">
+           <h2 align=center>Результати тесту</h2>
            <b><p>Ім'я:</b> <?php foreach($an as $arr1){
                   if($arr1!=null){
                       print_r($arr1["firstname"]);
@@ -76,7 +77,7 @@ pg_close($dbconn);
                   }
                 }
                 ?></p>
-        <h2 align=center>Результати тесту</h2>
+       
         <p><b>Розв'яжіть рівняння x<sup>2</sup>+5x-14=0</b></p>
         <p>7;2</p>
         <p>-7;-2</p>
