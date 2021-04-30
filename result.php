@@ -131,13 +131,8 @@ pg_close($dbconn);
                 <p>a-b</p>
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
                 <?php 
-                foreach ($us as $col_value) {
-        echo "\t\t<td>$col_value</td>\n";
-    }?>
-                    <?php 
-                foreach ($an as $col_value) {
-        echo "\t\t<td>$col_value</td>\n";
-    }?>
+print_r($us);
+print_r($an);?>
         </div>
     </body>
 </html>
