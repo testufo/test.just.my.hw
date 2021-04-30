@@ -41,7 +41,8 @@ pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 $query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
 ('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr')";
 pg_query($query);
-
+$an[];
+$us[];
 $query = "SELECT * FROM answers WHERE token="."'".$get["id"]."'";
 $answersss = pg_query($query);
 while ($line = pg_fetch_array($answersss , null, PGSQL_ASSOC)) {
