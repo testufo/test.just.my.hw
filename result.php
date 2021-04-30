@@ -11,8 +11,7 @@ exec('CREATE TABLE IF NOT EXISTS answers (
   email CHARACTER VARYING(100),
   answers CHARACTER VARYING(255)
 );');
-exec('INSERT INTO  answers(token, firstname, lastname, email, answers)
-VALUES (value1, value2, value3, value4, value5);');
+
 echo pg_list_tables($link);
 pg_close($link);
 ?>
