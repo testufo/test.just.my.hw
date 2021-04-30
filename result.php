@@ -130,9 +130,14 @@ pg_close($dbconn);
                 <p>a<sup>2</sup>-b<sup>2</sup></p>
                 <p>a-b</p>
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
-                <?php 
-print_r($us);
-print_r($an);?>
+                <h2 align=center>Результати інших учасників</h2>
+                <?php foreach($us as $arr1){
+                  if($arr1!=null){
+                    foreach($arr1 as $arr2){
+                      echo('<p><a href=/?id="'.$arr2[token].'">'.$arr2[firstname].$arr2[lastname].'</a></p>');
+                    }
+                  }
+                }
         </div>
     </body>
 </html>
