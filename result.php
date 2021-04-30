@@ -31,6 +31,6 @@ $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_erro
 pg_free_result($result);
 
 // Закрытие соединения
-pg_close($dbconn);*/
+pg_close($dbconn);
 ?>
 
