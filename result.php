@@ -134,7 +134,8 @@ pg_close($dbconn);
                 <?php foreach($us as $arr1){
                   if($arr1!=null){
                     foreach($arr1 as $arr2){
-                      print_r('<p><a href=/?id="'.$arr2["token"].'">'.$arr2["firstname"].$arr2["lastname"].'</a></p>');
+                     // print_r('<p><a href=/?id="'.$arr2["token"].'">'.$arr2["firstname"].$arr2["lastname"].'</a></p>');
+                      print_r($arr2["token"]);
                     }
                   }
                 }
