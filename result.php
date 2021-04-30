@@ -12,7 +12,7 @@ exec('CREATE TABLE IF NOT EXISTS answers (
   answers CHARACTER VARYING(255);');
 
 exec("INSERT INTO answers(token, firstname, lastname, email, answers)
-VALUES ('rdf', 'rdf', 'rdf', 'rdf', 'rdf');");
+VALUES (rdf, rdf, rdf, rdf, rdf);");
 
 pg_close($link);
 ?>
