@@ -6,7 +6,7 @@ $dbconn = pg_connect("host=ec2-54-216-185-51.eu-west-1.compute.amazonaws.com dbn
 
 // Выполнение SQL-запроса
 $query = 'CREATE TABLE IF NOT EXISTS answers (
-  id SERIAL PRIMARY KEY,
+  id SERIAL PRIMARY KEY AUTO_INCREMENT,
   token CHARACTER VARYING(255),
   firstname CHARACTER VARYING(100),
   lastname CHARACTER VARYING(100),
@@ -14,8 +14,8 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
   answer CHARACTER VARYING(255))';
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
-$query = "INSERT INTO answers VALUES
-(1, 'Шнеляяяяя', 'АРБАЙТЕЕЕЕЕЕН', 'АААААРБААААААЙТЕЕЕЕЕЕНН', 'ШНЕЕЕЕЕЕЕЕЛЯЯАААААА')";
+$query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
+('Шнеляяяяя', 'АРБАЙТЕЕЕЕЕЕН', 'АААААРБААААААЙТЕЕЕЕЕЕНН', 'ШНЕЕЕЕЕЕЕЕЛЯЯАААААА', 'ШНЕЕЕЕЕЕЕЕЛЯЯАААААА')";
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 $query = 'SELECT * FROM answers';
