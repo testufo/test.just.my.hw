@@ -44,13 +44,13 @@ pg_query($query);
 
 $query = "SELECT * FROM answers WHERE token="."'".$get["id"]."'";
 $answersss = pg_query($query);
-while ($line[] = pg_fetch_array($answersss , null, PGSQL_ASSOC)) {
-   array_push($an[], $line[]);
+while ($line = pg_fetch_array($answersss , null, PGSQL_ASSOC)) {
+   array_push($an, $line);
 }
 $query = "SELECT * FROM answers";
 $users = pg_query($query);
-while ($line[] = pg_fetch_array($users , null, PGSQL_ASSOC)) {
-  array_push($us[], $line[]);
+while ($line = pg_fetch_array($users , null, PGSQL_ASSOC)) {
+  array_push($us, $line);
 }
 // Закрытие соединения
 pg_close($dbconn);
