@@ -11,7 +11,7 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
   firstname CHARACTER VARYING(100),
   lastname CHARACTER VARYING(100),
   email CHARACTER VARYING(100),
-  answer CHARACTER VARYING(255)';
+  answer CHARACTER VARYING(255))';
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 // Вывод результатов в HTML
