@@ -133,13 +133,10 @@ pg_close($dbconn);
                       echo "\t</tr>\n";
                   }
                   echo "</table>\n";?>
-                 <?php echo "<table>\n";
-                      echo "\t<tr>\n";
-                      foreach ($users as $col_value) {
-                          echo "\t\t<td>$col_value</td>\n";
-                      echo "\t</tr>\n";
-                  }
-                  echo "</table>\n";?>
+                 <?php while ($row = pg_fetch_row($answersss)) {
+  echo "Автор: $row[0]  E-mail: $row[1]";
+  echo "<br />\n";
+}?>
         </div>
     </body>
 </html>
