@@ -15,7 +15,7 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 $query = "INSERT INTO answers VALUES
-('Арбайтен', 'Шнеляяяяя', 'АРБАЙТЕЕЕЕЕЕН', 'АААААРБААААААЙТЕЕЕЕЕЕНН', 'ШНЕЕЕЕЕЕЕЕЛЯЯАААААА')";
+(1, 'Шнеляяяяя', 'АРБАЙТЕЕЕЕЕЕН', 'АААААРБААААААЙТЕЕЕЕЕЕНН', 'ШНЕЕЕЕЕЕЕЕЛЯЯАААААА')";
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 $query = 'SELECT * FROM answers';
