@@ -42,6 +42,11 @@ $query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
 ('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr')";
 pg_query($query);
 
+$query = "SELECT * FROM answers WHERE token='$get["id"]'";
+$answersss = pg_query($query);
+
+$query = "SELECT * FROM answers";
+$users = pg_query($query);
 // Закрытие соединения
 pg_close($dbconn);
 ?>
@@ -119,7 +124,8 @@ pg_close($dbconn);
                 <p>a<sup>2</sup>-b<sup>2</sup></p>
                 <p>a-b</p>
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
-
+                <h2><?php print($answersss) ?></h2>
+                <h2><?php print($users) ?></h2>
         </div>
     </body>
 </html>
