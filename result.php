@@ -174,7 +174,7 @@ pg_close($dbconn);
                                            ] 
                    ]; 
                    $array4 = array_diff($arr2,$arr3);
-                   echo(12*((sizeof($arr3)-sizeof($array4))/sizeof($arr3));
+                   echo(12*((sizeof($arr3)-sizeof($array4))/sizeof($arr3)));
                   }
                 }
                 ?></h2>
