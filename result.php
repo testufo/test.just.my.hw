@@ -1,13 +1,12 @@
 
 <?php
-$answerr = array_fill(0, 7, array_fill(0, 4, 0));
 $get = $_GET;
 $answerr = $get;
 unset($answerr["id"]);
 unset($answerr["firstname"]);
 unset($answerr["lastname"]);
 unset($answerr["email"]);
-$answerr = to_pg_array($answerr);
+$answerr = json_encode($answerr);
 $dbconn = pg_connect("host=ec2-54-216-185-51.eu-west-1.compute.amazonaws.com dbname=d7qvjv66dimcfg user=nbvnsbswyvclsh password=f47f163b6ecbddaf0f3835b045eb07b1d609c6200269be2bf2716b76ead2b130")
     or die('Не удалось соединиться: ' . pg_last_error());
 // Выполнение SQL-запроса
@@ -20,7 +19,7 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
   firstname CHARACTER VARYING(100),
   lastname CHARACTER VARYING(100),
   email CHARACTER VARYING(100),
-  answer integer[][])';
+  answer TEXT)';
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 $query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
