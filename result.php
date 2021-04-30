@@ -4,7 +4,7 @@ $get = $_GET;
 $get["id"] = filter_var($get["id"], FILTER_SANITIZE_NUMBER_FLOAT);
 $get["firstname"] = filter_var($get["firstname"], FILTER_SANITIZE_STRING);
 $get["lastname"] = filter_var($get["lastname"], FILTER_SANITIZE_STRING);
-$get["email"] =  filter_var($get["id"], FILTER_SANITIZE_EMAIL);
+$get["email"] =  filter_var($get["email"], FILTER_SANITIZE_EMAIL);
 $answerr = $get;
 unset($answerr["id"]);
 unset($answerr["firstname"]);
