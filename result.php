@@ -137,7 +137,7 @@ pg_close($dbconn);
                       echo('<p><a href=/?id="'.$arr2[token].'">'.$arr2[firstname].$arr2[lastname].'</a></p>');
                     }
                   }
-                }
+                }?>
         </div>
     </body>
 </html>
