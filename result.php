@@ -126,8 +126,8 @@ pg_close($dbconn);
                 <p>a<sup>2</sup>-b<sup>2</sup></p>
                 <p>a-b</p>
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
-                <h2><?php print_r($answersss); ?></h2>
-                <h2><?php print_r($users); ?></h2>
+                <?php printf($answersss); ?>
+                <?php printf($users); ?>
         </div>
     </body>
 </html>
