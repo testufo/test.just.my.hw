@@ -21,16 +21,11 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
   lastname TEXT,
   email TEXT,
   answer TEXT)';
-$result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
+pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 $query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
 ('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr')";
-
-$result = pg_query($query);
-
-
-// Очистка результата
-pg_free_result($result);
+pg_query($query);
 
 // Закрытие соединения
 pg_close($dbconn);
