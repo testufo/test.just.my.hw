@@ -15,7 +15,7 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 $query = 'INSERT INTO answers(token, firstname, lastname, email, answer)
-VALUES (rdf, rdf, rdf, rdf, rdf)';
+VALUES ("рандом", "имя", "фамилия", "мэйл", "ответы")';
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 $query = 'SELECT * FROM answers';
