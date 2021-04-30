@@ -14,6 +14,9 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
   answer CHARACTER VARYING(255))';
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
+$query = 'INSERT INTO answers(token, firstname, lastname, email, answers)
+VALUES (rdf, rdf, rdf, rdf, rdf)';
+$result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 // Вывод результатов в HTML
 echo "<table>\n";
 while ($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
