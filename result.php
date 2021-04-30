@@ -1,6 +1,21 @@
 
 <?php
 $get = $_GET;
+if($get== null){
+  echo('<html>
+  <head>
+  <title> Результати </title>
+  <link href="src/styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <div class="content">
+  <h2 align=center>Спочатку пройдіть тест</h2>
+  </div>
+  </body>
+</html>
+  ');
+  die();
+}
 $get["id"] = filter_var($get["id"], FILTER_SANITIZE_NUMBER_FLOAT);
 $get["firstname"] = filter_var($get["firstname"], FILTER_SANITIZE_STRING);
 $get["lastname"] = filter_var($get["lastname"], FILTER_SANITIZE_STRING);
@@ -37,6 +52,74 @@ pg_close($dbconn);
     </head>
     <body>
         <div class="content">
+        <h2 align=center>Результати тесту</h2>
+        <p><b>Розв'яжіть рівняння x<sup>2</sup>+5x-14=0</b></p>
+        <p>7;2</p>
+        <p>-7;-2</p>
+        <p>7;-2</p>
+        <p>-7;2</p>
+
+        <b><p>Cпростіть вираз&nbsp;&nbsp;<sup><span class="fraction">
+                    <span class="numerator">25x<sup>8</sup></span>
+                    <span class="denominator">(5x<sup>3</sup>)<sup>4</sup></span>
+                  </span></sup></b></p> 
+                  <p><sup><span class="fraction">
+                    <span class="numerator">25</span>
+                    <span class="denominator">x<sup>4</sup></span>
+                  </span></sup></p>
+                  <p><sup><span class="fraction">
+                    <span class="numerator"> 	&nbsp; 	&nbsp;1</span>
+                    <span class="denominator">25x<sup>4</sup></span>
+                  </span></sup></p>
+                  <p><sup><span class="fraction">
+                    <span class="numerator">x<sup>4</sup></span>
+                    <span class="denominator">25</span>
+                  </span></sup></p>
+                  <p><sup><span class="fraction">
+                    <span class="numerator">5</span>
+                    <span class="denominator">x</span>
+                  </span></sup></p>
+           
+                <p><b>Указати моду для вибірки: 3; 1; 7; 1; 3; 7; 4.</b></p>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>7</p>     
+                
+                
+                <p><b>Коли в Токіо 5 годин ранку, в Києві – 10 годин вечора попереднього дня.<br> 
+                    Коли в Києві полудень, в Нью-Йорку – 5 годин ранку. <br>
+                    На скільки годин пізніше наступає Новий рік у Нью-Йорку порівняно з Токіо?</b></p>
+                <p>На 24 години</p>
+                <p>На 12 годин</p>
+                <p>На 14 годин</p>
+                <p>На 10 годин</p>
+
+                <p><b>І. Через точку A, що не належить площині α, можна провести лише одну пряму, паралельну площині α.<br>
+
+                    ІІ. Через точку A, що не належить площині α, можна провести лише одну площину, паралельну площині α.<br>
+                    
+                    ІІІ. Через точку A, що не належить площині α , можна провести лише одну пряму, перпендикулярну до площини α.<br>
+                    
+                    ІV. Через точку A, що не належить площині α, можна провести лише одну площину, перпендикулярну до площини α. </b></p>
+                <p>І</p>
+                <p>ІІ</p>
+                <p>ІІІ</p>
+                <p>ІV</p>
+
+                <p><b>Знайдіть похідну фунцкції y=5sinx-7x<sup>2</sup>+7</b></p>
+                <p>5sinx-14x</p>
+                <p>5cosx-7x</p>
+                <p>5cosx-14x</p>
+                <p>5cosx-14</p>
+
+                
+                <p><b>(a-b)(a<sup>2</sup>+ab+b<sup>2</sup>)=</b></p>
+                <p>a<sup>3</sup>-b<sup>3</sup></p>
+                <p>a<sup>2</sup>-b<sup>2</sup></p>
+                <p>a-b</p>
+                <p>a<sup>3</sup>+b<sup>3</sup></p>
+
         </div>
     </body>
 </html>
