@@ -44,11 +44,11 @@ pg_query($query);
 
 $query = "SELECT * FROM answers WHERE token="."'".$get["id"]."'";
 $answersss = pg_query($query);
-$answersss = $answersss.pg_fetch_array($answersss, null, PGSQL_ASSOC);
+$answersss = array_merge($answersss, pg_fetch_array($answersss, null, PGSQL_ASSOC));
 
 $query = "SELECT * FROM answers";
 $users = pg_query($query);
-$users = $users.pg_fetch_array($users, null, PGSQL_ASSOC);
+$users = array_merge($users, pg_fetch_array($users, null, PGSQL_ASSOC));
 // Закрытие соединения
 pg_close($dbconn);
 ?>
