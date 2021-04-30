@@ -82,7 +82,7 @@
                 <input type="radio" name="answer6" value="d">a<sup>3</sup>+b<sup>3</sup></p>
 
                 <input hidden id="id" type="text" name="id" >
-                <p><input id="submit-form"  class="button" type="submit" value="Перевірити" ></p>
+                <p><input id="submit-form"  class="button" type="submit" onclick="e()" value="Перевірити" ></p>
                 </form>
             <script>document.getElementById("id").value = Math.random().toString();
                 var $form = $('form#math-form'),
