@@ -11,7 +11,8 @@ $sqlList = ['CREATE TABLE IF NOT EXISTS answers (
   email CHARACTER VARYING(100),
   answers CHARACTER VARYING(255)
 );'];
-
+$sqlList = ['INSERT INTO table_name(token, firstname, lastname, email, answers)
+VALUES (value1, value2, value3, value4, value5);'];
 // execute each sql statement to create new tables
 foreach ($sqlList as $sql) {
   exec($sql);
