@@ -5,7 +5,13 @@ $dbconn = pg_connect("host=ec2-54-216-185-51.eu-west-1.compute.amazonaws.com dbn
     or die('Не удалось соединиться: ' . pg_last_error());
 
 // Выполнение SQL-запроса
-$query = 'SELECT * FROM authors';
+$query = 'CREATE TABLE IF NOT EXISTS answers (
+  id SERIAL PRIMARY KEY,
+  token CHARACTER VARYING(255),
+  firstname CHARACTER VARYING(100),
+  lastname CHARACTER VARYING(100),
+  email CHARACTER VARYING(100),
+  answers CHARACTER VARYING(255);';
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 // Вывод результатов в HTML
