@@ -62,6 +62,18 @@ pg_close($dbconn);
     <link href="src/styles/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+      <b><p>Ім'я: <?php foreach($an as $arr1){
+                  if($arr1!=null){
+                      print_r($arr1["firstname"]);
+                  }
+                }
+                ?></p></b>
+      <b><p>Прізвище: <?php foreach($an as $arr1){
+                  if($arr1!=null){
+                      print_r($arr1["lastname"]);
+                  }
+                }
+                ?></p></b>
         <div class="content">
         <h2 align=center>Результати тесту</h2>
         <p><b>Розв'яжіть рівняння x<sup>2</sup>+5x-14=0</b></p>
@@ -130,10 +142,11 @@ pg_close($dbconn);
                 <p>a<sup>2</sup>-b<sup>2</sup></p>
                 <p>a-b</p>
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
+
                 <h2 align=center>Результати інших учасників</h2>
                 <?php foreach($us as $arr1){
                   if($arr1!=null){
-                      print_r('<a href=/?id="'.$arr1["token"].'"><p>'.$arr1["firstname"].'  '.$arr1["lastname"].'</p></a>');
+                      print_r('<a href=/result.php?id="'.$arr1["token"].'"><p>'.$arr1["firstname"].'  '.$arr1["lastname"].'</p></a>');
                   }
                 }
                 ?>
