@@ -144,7 +144,40 @@ pg_close($dbconn);
                 <p>a<sup>2</sup>-b<sup>2</sup></p>
                 <p>a-b</p>
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
-
+                 <h2 align=center><b>Оцінка: </b> <?php foreach($us as $arr1){
+                  if($arr1!=null){
+                     $arr2=json_decode($arr1["answer"]);
+                     $arr3=[
+                      "answer" => [
+                            "4" 
+                         ], 
+                      "answer2" => [
+                               "2" 
+                            ], 
+                      "answer3" => [
+                                  "1", 
+                                  "3", 
+                                  "4" 
+                               ], 
+                      "answer4" => [
+                                     "3" 
+                                  ], 
+                      "answer5" => [
+                                        "2", 
+                                        "3" 
+                                     ], 
+                      "answer6" => [
+                                           "3" 
+                                        ], 
+                      "answer7" => [
+                                              "1" 
+                                           ] 
+                   ]; 
+                   $array4 = array_diff($arr2,$arr3);
+                   echo(12*((sizeof($arr3)-sizeof($array4))/sizeof($arr3));
+                  }
+                }
+                ?></h2>
                 <h2 align=center>Результати інших учасників</h2>
                 <?php foreach($us as $arr1){
                   if($arr1!=null){
