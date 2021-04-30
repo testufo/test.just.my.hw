@@ -13,7 +13,7 @@ $sqlList = ['CREATE TABLE IF NOT EXISTS answers (
 
 // execute each sql statement to create new tables
 foreach ($sqlList as $sql) {
-  $this->pdo->exec($sql);
+  exec($sql);
 }
 echo 'table successfully created!';
 return $this;
