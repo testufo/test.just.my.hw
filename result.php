@@ -19,7 +19,7 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
   firstname CHARACTER VARYING(100),
   lastname CHARACTER VARYING(100),
   email CHARACTER VARYING(100),
-  answer integer ARRAY)';
+  answer integer[][])';
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 $query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
@@ -47,7 +47,7 @@ function to_pg_array($set) {
           $result[] = $t;
       }
   }
-  return '[' . implode(",", $result) . ']'; // format
+  return '{' . implode(",", $result) . '}'; // format
 }
 ?>
 
