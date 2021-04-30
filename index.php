@@ -16,7 +16,7 @@
                 <input type="email" name="email" required placeholder="example@domen.com">
 
                 <p><b>Розв'яжіть рівняння x<sup>2</sup>+5x-14=0</b></p>
-                <p> <input type="radio" name="answer" value="a">7;2<Br>
+                <p> <input type="radio" name="answer" value="a" required>7;2<Br>
                 <input type="radio" name="answer" value="b">-7;-2<Br>
                 <input type="radio" name="answer" value="c">7;-2<Br>
                 <input type="radio" name="answer" value="d">-7;2</p>
