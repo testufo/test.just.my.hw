@@ -44,11 +44,11 @@ pg_query($query);
 
 $query = "SELECT * FROM answers WHERE token="."'".$get["id"]."'";
 $answersss = pg_query($query);
-$answersss = pg_fetch_array($answersss, null, PGSQL_ASSOC);
+$answersss = $answersss.pg_fetch_array($answersss, null, PGSQL_ASSOC);
 
 $query = "SELECT * FROM answers";
 $users = pg_query($query);
-$users = pg_fetch_array($users, null, PGSQL_ASSOC);
+$users = $users.pg_fetch_array($users, null, PGSQL_ASSOC);
 // Закрытие соединения
 pg_close($dbconn);
 ?>
@@ -126,17 +126,14 @@ pg_close($dbconn);
                 <p>a<sup>2</sup>-b<sup>2</sup></p>
                 <p>a-b</p>
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
-                <?php echo "<table>\n";
-                      echo "\t<tr>\n";
-                      foreach ($answersss as $col_value) {
-                          echo "\t\t<td>$col_value</td>\n";
-                      echo "\t</tr>\n";
-                  }
-                  echo "</table>\n";?>
-                 <?php while ($row = pg_fetch_row($answersss)) {
-  echo "Автор: $row[0]  E-mail: $row[1]";
-  echo "<br />\n";
-}?>
+                <?php 
+                foreach ($answersss as $col_value) {
+        echo "\t\t<td>$col_value</td>\n";
+    }?>
+                    <?php 
+                foreach ($users as $col_value) {
+        echo "\t\t<td>$col_value</td>\n";
+    }?>
         </div>
     </body>
 </html>
