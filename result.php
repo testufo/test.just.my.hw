@@ -44,11 +44,14 @@ pg_query($query);
 
 $query = "SELECT * FROM answers WHERE token="."'".$get["id"]."'";
 $answersss = pg_query($query);
-$answersss[] = array_merge($answersss, pg_fetch_array($answersss, null, PGSQL_ASSOC));
-
+while ($line[] = pg_fetch_array($answersss , null, PGSQL_ASSOC)) {
+   array_push($an[], $line[])
+}
 $query = "SELECT * FROM answers";
 $users = pg_query($query);
-$users[] = array_merge($users, pg_fetch_array($users, null, PGSQL_ASSOC));
+while ($line[] = pg_fetch_array($users , null, PGSQL_ASSOC)) {
+  array_push($us[], $line[])
+}
 // Закрытие соединения
 pg_close($dbconn);
 ?>
@@ -127,11 +130,11 @@ pg_close($dbconn);
                 <p>a-b</p>
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
                 <?php 
-                foreach ($answersss as $col_value) {
+                foreach ($us as $col_value) {
         echo "\t\t<td>$col_value</td>\n";
     }?>
                     <?php 
-                foreach ($users as $col_value) {
+                foreach ($an as $col_value) {
         echo "\t\t<td>$col_value</td>\n";
     }?>
         </div>
