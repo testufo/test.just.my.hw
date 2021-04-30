@@ -7,7 +7,7 @@
         <div class="content">
             <h2 align=center>Тест з математики</h2>
             <img align=right style="margin-right:10%;" width="640" height="480" src="src/images/ds_461390782.jpg"></img>
-            <form action="handler.php">
+            <form  id="math-form" >
                 <p><b>Ім'я</b></p>
                 <input type="text" name="firstname" required pattern="[А-Я]{1}[а-я]{2,20}"> 
                 <p><b>Прізвище</b></p>
@@ -82,9 +82,24 @@
                 <input type="radio" name="answer6" value="d">a<sup>3</sup>+b<sup>3</sup></p>
 
                 <input hidden id="id" type="text" name="id" >
-                <p><input  class="button" type="submit" value="Перевірити" ></p>
+                <p><input id="submit-form"  class="button" type="submit" value="Перевірити" ></p>
                 </form>
-                <script>document.getElementById("id").value = Math.random().toString();</script>
+            <script>document.getElementById("id").value = Math.random().toString();
+                var $form = $('form#math-form'),
+                url = 'https://script.google.com/macros/s/AKfycbwc-q-x9J01x78hedvjXQL26Q3uT4skwkFmKSJhAme0lrlKmJt48v7H20TtORcGf6ui/exec'
+
+                $('#submit-form').on('click', function(e) {
+                e.preventDefault();
+                var jqxhr = $.ajax({
+                    url: url,
+                    method: "GET",
+                    dataType: "json",
+                    data: $form.serializeObject()
+                }).success(
+                    // do something
+                );
+                })
+        </script>
         </div>
     </body>
 </html>
