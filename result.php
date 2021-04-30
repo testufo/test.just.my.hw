@@ -9,8 +9,6 @@ exec('CREATE TABLE IF NOT EXISTS answers (
   firstname CHARACTER VARYING(100),
   lastname CHARACTER VARYING(100),
   email CHARACTER VARYING(100),
-  answers CHARACTER VARYING(255));');
-
-echo pg_list_tables($link);
+  answers CHARACTER VARYING(255);');
 pg_close($link);
 ?>
