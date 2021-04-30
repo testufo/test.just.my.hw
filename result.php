@@ -14,10 +14,10 @@ $query = "DROP TABLE answers";
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 $query = 'CREATE TABLE IF NOT EXISTS answers (
   id SERIAL PRIMARY KEY,
-  token CHARACTER  UNIQUE VARYING(255),
-  firstname CHARACTER VARYING(100),
-  lastname CHARACTER VARYING(100),
-  email CHARACTER VARYING(100),
+  token TEXT UNIQUE,
+  firstname TEXT,
+  lastname TEXT,
+  email TEXT,
   answer TEXT)';
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
