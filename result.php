@@ -144,7 +144,7 @@ pg_close($dbconn);
                 <p>a<sup>2</sup>-b<sup>2</sup></p>
                 <p>a-b</p>
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
-                 <h2 align=center><b>Оцінка: </b> <?php foreach($us as $arr1){
+                 <h2 align=center><b>Оцінка: </b> <?php foreach($an as $arr1){
                   if($arr1!=null){
                      $arr2=json_decode($arr1["answer"],true);
                      $arr3=[
