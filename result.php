@@ -62,19 +62,20 @@ pg_close($dbconn);
     <link href="src/styles/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-      <b><p>Ім'я: <?php foreach($an as $arr1){
+     
+        <div class="content">
+           <b><p>Ім'я:</b> <?php foreach($an as $arr1){
                   if($arr1!=null){
                       print_r($arr1["firstname"]);
                   }
                 }
-                ?></p></b>
-      <b><p>Прізвище: <?php foreach($an as $arr1){
+                ?></p>
+      <b><p>Прізвище:</b> <?php foreach($an as $arr1){
                   if($arr1!=null){
                       print_r($arr1["lastname"]);
                   }
                 }
-                ?></p></b>
-        <div class="content">
+                ?></p>
         <h2 align=center>Результати тесту</h2>
         <p><b>Розв'яжіть рівняння x<sup>2</sup>+5x-14=0</b></p>
         <p>7;2</p>
