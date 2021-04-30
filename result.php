@@ -14,8 +14,8 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
   answer CHARACTER VARYING(255))';
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
-$query = 'INSERT INTO answers(token, firstname, lastname, email, answer)
-VALUES ("рандом", "имя", "фамилия", "мэйл", "ответы")';
+$query = "INSERT INTO answers VALUES
+('Арбайтен', 'Шнеляяяяя', 'АРБАЙТЕЕЕЕЕЕН', 'АААААРБААААААЙТЕЕЕЕЕЕНН', 'ШНЕЕЕЕЕЕЕЕЛЯЯАААААА')";
 $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
 $query = 'SELECT * FROM answers';
