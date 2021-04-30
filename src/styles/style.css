@@ -2,6 +2,11 @@ body {
     background-image:  url(../images/metal.png); /* Путь к фоновому рисунку */
     background-repeat: repeat; 
 }
+img{
+    border-style:double;
+    border-radius: 5px;
+    border-width: 3px;
+}
 
 header {
     background:rgba(0, 0, 0, 0.7);
@@ -81,11 +86,23 @@ input[type=text] {
     border-color: rgb(69, 211, 104);
     color: rgb(69, 211, 104);
   }
+  input[type=text]:hover{
+    box-shadow: 
+    0 0 5px #6eff81,
+    0 0 10px #6eff81,
+    0 0 20px #6eff81;
+  }
 input[type=email] {
     background-color: transparent;
     border-style: solid;
     border-color: rgb(69, 211, 104);
     color: rgb(69, 211, 104);
+  }
+  input[type=email]:hover {
+    box-shadow: 
+    0 0 5px #6eff81,
+    0 0 10px #6eff81,
+    0 0 20px #6eff81;
   }
   input[type="radio"] {
     /* remove standard background appearance */
@@ -138,4 +155,6 @@ input[type=email] {
     0 0 10px #6eff81,
     0 0 20px #6eff81;
   }
-
+  input:invalid {
+    border: 1px solid red;
+  }
