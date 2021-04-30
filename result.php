@@ -6,7 +6,7 @@ $dbconn = pg_connect("host=ec2-54-216-185-51.eu-west-1.compute.amazonaws.com dbn
 
 // Выполнение SQL-запроса
 $query = 'CREATE TABLE IF NOT EXISTS answers (
-  id SERIAL PRIMARY KEY AUTO_INCREMENT,
+  id SERIAL PRIMARY KEY,
   token CHARACTER VARYING(255),
   firstname CHARACTER VARYING(100),
   lastname CHARACTER VARYING(100),
