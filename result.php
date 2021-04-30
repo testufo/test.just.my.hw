@@ -133,7 +133,7 @@ pg_close($dbconn);
                 <h2 align=center>Результати інших учасників</h2>
                 <?php foreach($us as $arr1){
                   if($arr1!=null){
-                      print_r('<p><a href=/?id="'.$arr1["token"].'">'.$arr1["firstname"].$arr1["lastname"].'</a></p>');
+                      print_r('<a href=/?id="'.$arr1["token"].'"><p>'.$arr1["firstname"].'  '.$arr1["lastname"].'</p></a>');
                   }
                 }
                 ?>
