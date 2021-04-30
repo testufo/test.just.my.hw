@@ -1,5 +1,6 @@
 
 <?php
+$answerr = array_fill(0, 7, array_fill(0, 4, 0));
 $get = $_GET;
 $answerr = $get;
 unset($answerr["id"]);
