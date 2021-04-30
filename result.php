@@ -126,8 +126,24 @@ pg_close($dbconn);
                 <p>a<sup>2</sup>-b<sup>2</sup></p>
                 <p>a-b</p>
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
-                <?php echo($answersss); ?>
-                <?php echo($users); ?>
+                <?php echo "<table>\n";
+                  while ($answersss) {
+                      echo "\t<tr>\n";
+                      foreach ($answersss as $col_value) {
+                          echo "\t\t<td>$col_value</td>\n";
+                      }
+                      echo "\t</tr>\n";
+                  }
+                  echo "</table>\n";?>
+                 <?php echo "<table>\n";
+                  while ($users) {
+                      echo "\t<tr>\n";
+                      foreach ($users as $col_value) {
+                          echo "\t\t<td>$col_value</td>\n";
+                      }
+                      echo "\t</tr>\n";
+                  }
+                  echo "</table>\n";?>
         </div>
     </body>
 </html>
