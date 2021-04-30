@@ -13,6 +13,6 @@ exec('CREATE TABLE IF NOT EXISTS answers (
 );');
 exec('INSERT INTO  answers(token, firstname, lastname, email, answers)
 VALUES (value1, value2, value3, value4, value5);');
-
+echo pg_list_tables($link);
 pg_close($link);
 ?>
