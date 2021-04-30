@@ -47,7 +47,7 @@ function to_pg_array($set) {
           $result[] = $t;
       }
   }
-  return '{' . implode(",", $result) . '}'; // format
+  return '[' . implode(",", $result) . ']'; // format
 }
 ?>
 
