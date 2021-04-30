@@ -1,6 +1,10 @@
 
 <?php
 $get = $_GET;
+$get["id"] = filter_var($get["id"], FILTER_SANITIZE_NUMBER_FLOAT);
+$get["firstname"] = filter_var($get["firstname"], FILTER_SANITIZE_STRING);
+$get["lastname"] = filter_var($get["lastname"], FILTER_SANITIZE_STRING);
+$get["email"] =  filter_var($get["id"], FILTER_SANITIZE_EMAIL);
 $answerr = $get;
 unset($answerr["id"]);
 unset($answerr["firstname"]);
@@ -22,7 +26,7 @@ $result = pg_query($query) or die('Ошибка запроса: ' . pg_last_erro
 $query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
 ('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr')";
 
-$result = pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
+$result = pg_query($query);
 
 
 // Очистка результата
@@ -31,4 +35,14 @@ pg_free_result($result);
 // Закрытие соединения
 pg_close($dbconn);
 ?>
+<html>
+    <head>
+    <title> Результати </title>
+    <link href="src/styles/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="content">
+        </div>
+    </body>
+</html>
 
