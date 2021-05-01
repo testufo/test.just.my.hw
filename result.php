@@ -146,8 +146,8 @@ pg_close($dbconn);
                 <p>a<sup>3</sup>+b<sup>3</sup></p>
                  <h2 align=center><b>Оцінка: </b> <?php foreach($an as $arr1){
                   if($arr1!=null){
-                     $arr2=json_decode($arr1["answer"],true);
-                     $arr3=[
+                     $arr2= array_2d_to_1d(json_decode($arr1["answer"],true));
+                     $arr3=array_2d_to_1d([
                       "answer" => [
                             "4" 
                          ], 
@@ -172,26 +172,23 @@ pg_close($dbconn);
                       "answer7" => [
                                               "1" 
                                            ] 
-                   ]; 
-                   $arr4 = check_diff_multi($arr2,$arr3);
+                   ]); 
+                   $arr4 = array_intersect(array_2d_to_1d($arr,array_2d_to_1d($arr3));
                    $calc = 12*(sizeof($arr4)/sizeof($arr3));
                    echo($calc);
                   }
                 }
-                function check_diff_multi($array1, $array2){
-                  $result = array();
-                  foreach($array1 as $key => $val) {
-                       if(isset($array2[$key])){
-                         if(is_array($val) && $array2[$key]){
-                             $result[$key] = check_diff_multi($val, $array2[$key]);
-                         }
-                     } else {
-                         $result[$key] = $val;
-                     }
-                    
+                function array_2d_to_1d ($input_array) {
+                  $output_array = array();
+              
+                  for ($i = 0; $i < count($input_array); $i++) {
+                    for ($j = 0; $j < count($input_array[$i]); $j++) {
+                      $output_array[] = $input_array[$i][$j];
+                    }
                   }
-                  return $result;
-                }
+              
+                  return $output_array;
+              }
                 ?></h2>
                 <h2 align=center>Результати інших учасників</h2>
                 <?php foreach($us as $arr1){
