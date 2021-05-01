@@ -79,46 +79,46 @@ pg_close($dbconn);
                 ?></p>
        
         <p><b>Розв'яжіть рівняння x<sup>2</sup>+5x-14=0</b></p>
-        <p>7;2</p>
-        <p>-7;-2</p>
-        <p>7;-2</p>
-        <p>-7;2</p>
+        <p id="11">7;2</p>
+        <p id="12">-7;-2</p>
+        <p id="13">7;-2</p>
+        <p id="14">-7;2</p>
 
         <b><p>Cпростіть вираз&nbsp;&nbsp;<sup><span class="fraction">
                     <span class="numerator">25x<sup>8</sup></span>
                     <span class="denominator">(5x<sup>3</sup>)<sup>4</sup></span>
                   </span></sup></b></p> 
-                  <p><sup><span class="fraction">
+                  <p id="21"><sup><span class="fraction">
                     <span class="numerator">25</span>
                     <span class="denominator">x<sup>4</sup></span>
                   </span></sup></p>
-                  <p><sup><span class="fraction">
+                  <p id="22"><sup><span class="fraction">
                     <span class="numerator"> 	&nbsp; 	&nbsp;1</span>
                     <span class="denominator">25x<sup>4</sup></span>
                   </span></sup></p>
-                  <p><sup><span class="fraction">
+                  <p id="23"><sup><span class="fraction">
                     <span class="numerator">x<sup>4</sup></span>
                     <span class="denominator">25</span>
                   </span></sup></p>
-                  <p><sup><span class="fraction">
+                  <p id="24"><sup><span class="fraction">
                     <span class="numerator">5</span>
                     <span class="denominator">x</span>
                   </span></sup></p>
            
                 <p><b>Указати моду для вибірки: 3; 1; 7; 1; 3; 7; 4.</b></p>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>7</p>     
+                <p id="31">1</p>
+                <p id="32">2</p>
+                <p id="33">3</p>
+                <p id="34">7</p>     
                 
                 
                 <p><b>Коли в Токіо 5 годин ранку, в Києві – 10 годин вечора попереднього дня.<br> 
                     Коли в Києві полудень, в Нью-Йорку – 5 годин ранку. <br>
                     На скільки годин пізніше наступає Новий рік у Нью-Йорку порівняно з Токіо?</b></p>
-                <p>На 24 години</p>
-                <p>На 12 годин</p>
-                <p>На 14 годин</p>
-                <p>На 10 годин</p>
+                <p id="41">На 24 години</p>
+                <p id="42">На 12 годин</p>
+                <p id="43">На 14 годин</p>
+                <p id="44">На 10 годин</p>
 
                 <p><b>І. Через точку A, що не належить площині α, можна провести лише одну пряму, паралельну площині α.<br>
 
@@ -127,71 +127,24 @@ pg_close($dbconn);
                     ІІІ. Через точку A, що не належить площині α , можна провести лише одну пряму, перпендикулярну до площини α.<br>
                     
                     ІV. Через точку A, що не належить площині α, можна провести лише одну площину, перпендикулярну до площини α. </b></p>
-                <p>І</p>
-                <p>ІІ</p>
-                <p>ІІІ</p>
-                <p>ІV</p>
+                <p id="51">І</p>
+                <p id="52">ІІ</p>
+                <p id="53">ІІІ</p>
+                <p id="54">ІV</p>
 
                 <p><b>Знайдіть похідну фунцкції y=5sinx-7x<sup>2</sup>+7</b></p>
-                <p>5sinx-14x</p>
-                <p>5cosx-7x</p>
-                <p>5cosx-14x</p>
-                <p>5cosx-14</p>
+                <p id="61">5sinx-14x</p>
+                <p id="62">5cosx-7x</p>
+                <p id="63">5cosx-14x</p>
+                <p id="64">5cosx-14</p>
 
                 
                 <p><b>(a-b)(a<sup>2</sup>+ab+b<sup>2</sup>)=</b></p>
-                <p>a<sup>3</sup>-b<sup>3</sup></p>
-                <p>a<sup>2</sup>-b<sup>2</sup></p>
-                <p>a-b</p>
-                <p>a<sup>3</sup>+b<sup>3</sup></p>
-                 <h2 align=center><b>Оцінка: </b> <?php foreach($an as $arr1){
-                  if($arr1!=null){
-                     $arr2=json_decode($arr1["answer"],true);
-                     $arr3=[
-                      "answer" => [
-                            "4" 
-                         ], 
-                      "answer2" => [
-                               "2" 
-                            ], 
-                      "answer3" => [
-                                  "1", 
-                                  "3", 
-                                  "4" 
-                               ], 
-                      "answer4" => [
-                                     "3" 
-                                  ], 
-                      "answer5" => [
-                                        "2", 
-                                        "3" 
-                                     ], 
-                      "answer6" => [
-                                           "3" 
-                                        ], 
-                      "answer7" => [
-                                              "1" 
-                                           ] 
-                   ];   
-                   $arr4 = array_intersect(array_2d_to_1d($arr2),array_2d_to_1d($arr3));
-                   $calc = 12*(sizeof($arr4)/sizeof($arr3));
-                   echo($calc);
-                  }
-                }
-                function array_2d_to_1d ($input_array) {
-                  $output_array = array();
-              
-                  for ($i = 0; $i < count($input_array); $i++) {
-                    if($input_array[$i]!=null){
-                    for ($j = 0; $j < count($input_array[$i]); $j++) {
-                      $output_array[] = $input_array[$i][$j];
-                    }
-                  }
-                  }
-              
-                  return $output_array;
-              }
-                ?></h2>
+                <p id="61">a<sup>3</sup>-b<sup>3</sup></p>
+                <p id="62">a<sup>2</sup>-b<sup>2</sup></p>
+                <p id="63">a-b</p>
+                <p id="64">a<sup>3</sup>+b<sup>3</sup></p>
+                
                 <h2 align=center>Результати інших учасників</h2>
                 <?php foreach($us as $arr1){
                   if($arr1!=null){
@@ -199,6 +152,10 @@ pg_close($dbconn);
                   }
                 }
                 ?>
+                <script> 
+                var answer=JSON.parse_str("<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answers"]); } }?>");
+                alert(answer);
+                </script>
         </div>
     </body>
 </html>
