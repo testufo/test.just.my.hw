@@ -140,12 +140,12 @@ pg_close($dbconn);
 
                 
                 <p><b>(a-b)(a<sup>2</sup>+ab+b<sup>2</sup>)=</b></p>
-                <p id="61">a<sup>3</sup>-b<sup>3</sup></p>
-                <p id="62">a<sup>2</sup>-b<sup>2</sup></p>
-                <p id="63">a-b</p>
-                <p id="64">a<sup>3</sup>+b<sup>3</sup></p>
-                <p class="red">Відповідь учасника</p>
-                <p class="green">Правильна выдповідь</p>
+                <p id="71">a<sup>3</sup>-b<sup>3</sup></p>
+                <p id="72">a<sup>2</sup>-b<sup>2</sup></p>
+                <p id="73">a-b</p>
+                <p id="74">a<sup>3</sup>+b<sup>3</sup></p>
+                <p align=center class="red">Відповідь учасника</p>
+                <p align=center class="green">Правильна выдповідь</p>
                 <h2 align=center>Результати інших учасників</h2>
                 <?php foreach($us as $arr1){
                   if($arr1!=null){
@@ -176,7 +176,7 @@ pg_close($dbconn);
                 for (var i = 0; i < myObj.answer7.length; i++) {
                   document.getElementById("7"+myObj.answer7[i]).className = "red";
                 } 
-
+                console.log("OK");
                 var myObj =  JSON.parse('{"answer":["4"],"answer2":["2"],"answer3":["1","3","4"],"answer4":["3"],"answer5":["2","3"],"answer6":["3"],"answer7":["1"]}');
                 for (var i = 0; i < myObj.answer.length; i++) {
                   document.getElementById("1"+myObj.answer[i]).className = "green";
@@ -199,6 +199,7 @@ pg_close($dbconn);
                 for (var i = 0; i < myObj.answer7.length; i++) {
                   document.getElementById("7"+myObj.answer7[i]).className = "green";
                 } 
+                console.log("OK");
                 </script>
         </div>
     </body>
