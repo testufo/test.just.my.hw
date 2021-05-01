@@ -176,6 +176,8 @@ pg_close($dbconn);
                    $arr4 = array_intersect_assoc($arr2,$arr3);
                    $calc = 12*(sizeof($arr4)/sizeof($arr3));
                    echo($calc);
+                   echo(sizeof($arr4));
+                   echo(sizeof($arr3));
                   }
                 }
                 ?></h2>
