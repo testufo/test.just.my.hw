@@ -145,7 +145,7 @@ pg_close($dbconn);
                 <p id="73">a-b</p>
                 <p id="74">a<sup>3</sup>+b<sup>3</sup></p>
                 <p align=center class="red">Відповідь учасника</p>
-                <p align=center class="green">Правильна выдповідь</p>
+                <p align=center class="green">Правильна выдповідь</p><br><br><br>
                 <h2 align=center>Результати інших учасників</h2>
                 <?php foreach($us as $arr1){
                   if($arr1!=null){
