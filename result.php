@@ -144,7 +144,8 @@ pg_close($dbconn);
                 <p id="62">a<sup>2</sup>-b<sup>2</sup></p>
                 <p id="63">a-b</p>
                 <p id="64">a<sup>3</sup>+b<sup>3</sup></p>
-                
+                <p class="red">Відповідь учасника</p>
+                <p class="green">Правильна выдповідь</p>
                 <h2 align=center>Результати інших учасників</h2>
                 <?php foreach($us as $arr1){
                   if($arr1!=null){
@@ -161,19 +162,42 @@ pg_close($dbconn);
                   document.getElementById("2"+myObj.answer2[i]).style.backgroundColor = "red";
                 } 
                 for (var i = 0; i < myObj.answer3.length; i++) {
-                  document.getElementById("3"+myObj.answer3[i]).style.backgroundColor = "red";
+                  document.getElementById("3"+myObj.answer3[i]).className = "red";
                 } 
                 for (var i = 0; i < myObj.answer4.length; i++) {
-                  document.getElementById("4"+myObj.answer4[i]).style.backgroundColor = "red";
+                  document.getElementById("4"+myObj.answer4[i]).className = "red";
                 } 
                 for (var i = 0; i < myObj.answer5.length; i++) {
-                  document.getElementById("5"+myObj.answer5[i]).style.backgroundColor = "red";
+                  document.getElementById("5"+myObj.answer5[i]).className = "red";
                 } 
                 for (var i = 0; i < myObj.answer6.length; i++) {
-                  document.getElementById("6"+myObj.answer6[i]).style.backgroundColor = "red";
+                  document.getElementById("6"+myObj.answer6[i]).className = "red";
                 } 
                 for (var i = 0; i < myObj.answer7.length; i++) {
-                  document.getElementById("7"+myObj.answer7[i]).style.backgroundColor = "red";
+                  document.getElementById("7"+myObj.answer7[i]).className = "red";
+                } 
+
+                var myObj =  JSON.parse('{"answer":["4"],"answer2":["2"],"answer3":["1","3","4"],"answer4":["3"],"answer5":["2","3"],"answer6":["3"],"answer7":["1"]}');
+                for (var i = 0; i < myObj.answer.length; i++) {
+                  document.getElementById("1"+myObj.answer[i]).className = "green";
+                } 
+                for (var i = 0; i < myObj.answer2.length; i++) {
+                  document.getElementById("2"+myObj.answer2[i]).className ="green";
+                } 
+                for (var i = 0; i < myObj.answer3.length; i++) {
+                  document.getElementById("3"+myObj.answer3[i]).className = "green";
+                } 
+                for (var i = 0; i < myObj.answer4.length; i++) {
+                  document.getElementById("4"+myObj.answer4[i]).className = "green";
+                } 
+                for (var i = 0; i < myObj.answer5.length; i++) {
+                  document.getElementById("5"+myObj.answer5[i]).className = "green";
+                } 
+                for (var i = 0; i < myObj.answer6.length; i++) {
+                  document.getElementById("6"+myObj.answer6[i]).className = "green";
+                } 
+                for (var i = 0; i < myObj.answer7.length; i++) {
+                  document.getElementById("7"+myObj.answer7[i]).className = "green";
                 } 
                 </script>
         </div>
