@@ -160,6 +160,9 @@ pg_close($dbconn);
                 for (var i = 0; i < myObj.answer2.length; i++) {
                   document.getElementById("2"+myObj.answer2[i]).style.color = "blue";
                 } 
+                for (var i = 0; i < myObj.answer3.length; i++) {
+                  document.getElementById("2"+myObj.answer3[i]).style.color = "blue";
+                } 
                 </script>
         </div>
     </body>
