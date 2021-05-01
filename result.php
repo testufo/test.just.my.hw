@@ -153,12 +153,10 @@ pg_close($dbconn);
                 }
                 ?>
                 <script> 
-                var myObj =  JSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>']);
-                var x;
+                var myObj =  JSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>');
                 for (var i = 0; i < myObj.answer.length; i++) {
-                 x+=myObj.answer[i];
+                  document.getElementById("1"+myObj.answer[i]).style.color = "blue";
                 } 
-                document.getElementById("1"+x).style.color = "blue";
                 </script>
         </div>
     </body>
