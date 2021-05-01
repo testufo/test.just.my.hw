@@ -153,10 +153,12 @@ pg_close($dbconn);
                 }
                 ?>
                 <script> 
-                JSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>',function(k, v) {
-                  console.log(k); // пишем имя текущего свойства, последним именем будет ""
-                  return v;       // возвращаем неизменённое значение свойства
-                });
+                var myObj =  JSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>']);
+                var x;
+                for (var i = 0; i < myObj.answer.length; i++) {
+                 x+=myObj.answer[i];
+                } 
+                document.getElementById("1"+x).style.color = "blue";
                 </script>
         </div>
     </body>
