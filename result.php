@@ -147,7 +147,7 @@ pg_close($dbconn);
                  <h2 align=center><b>Оцінка: </b> <?php foreach($an as $arr1){
                   if($arr1!=null){
                      $arr2= array_2d_to_1d(json_decode($arr1["answer"],true));
-                     $arr3=array_2d_to_1d([
+                     $arr3=array_2d_to_1d(Array[
                       "answer" => [
                             "4" 
                          ], 
