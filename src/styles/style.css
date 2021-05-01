@@ -65,16 +65,16 @@ p{
   text-shadow: none;
 }
 .red{
-text-shadow: 
-0 0 5px #ff6e6e,
-0 0 10px #ff7f6e,
-0 0 20px #ff906e;
+  text-shadow: 
+  0 0 5px #ff6e6e,
+  0 0 10px #ff7f6e,
+  0 0 20px #ff906e !important;
 }
 .green{
-text-shadow: 
-0 0 5px #7fff6e,
-0 0 10px #6eff6e,
-0 0 20px #6eff7a;
+  text-shadow: 
+  0 0 5px #6eff81,
+  0 0 10px #6eff81 ,
+  0 0 20px #6eff81 !important;
 }
 .fraction {
   display: inline-table;
