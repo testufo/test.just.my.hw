@@ -173,7 +173,7 @@ pg_close($dbconn);
                                               "1" 
                                            ] 
                    ]); 
-                   $arr4 = array_intersect(array_2d_to_1d($arr,array_2d_to_1d($arr3));
+                   $arr4 = array_intersect(array_2d_to_1d($arr,array_2d_to_1d($arr3)));
                    $calc = 12*(sizeof($arr4)/sizeof($arr3));
                    echo($calc);
                   }
