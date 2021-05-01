@@ -187,8 +187,9 @@ pg_close($dbconn);
                      } else {
                          $result[$key] = $val;
                      }
-                     return $result;
+                    
                   }
+                  return $result;
                 }
                 ?></h2>
                 <h2 align=center>Результати інших учасників</h2>
