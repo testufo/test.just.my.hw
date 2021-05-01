@@ -182,9 +182,11 @@ pg_close($dbconn);
                   $output_array = array();
               
                   for ($i = 0; $i < count($input_array); $i++) {
+                    if($input_array[$i]!=null){
                     for ($j = 0; $j < count($input_array[$i]); $j++) {
                       $output_array[] = $input_array[$i][$j];
                     }
+                  }
                   }
               
                   return $output_array;
