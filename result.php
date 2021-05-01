@@ -156,10 +156,10 @@ pg_close($dbconn);
                 <script> 
                 var myObj =  JSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>');
                 for (var i = 0; i < myObj.answer.length; i++) {
-                  document.getElementById("1"+myObj.answer[i]).style.backgroundColor = "red";
+                  document.getElementById("1"+myObj.answer[i]).className = "red";
                 } 
                 for (var i = 0; i < myObj.answer2.length; i++) {
-                  document.getElementById("2"+myObj.answer2[i]).style.backgroundColor = "red";
+                  document.getElementById("2"+myObj.answer2[i]).className = "red";
                 } 
                 for (var i = 0; i < myObj.answer3.length; i++) {
                   document.getElementById("3"+myObj.answer3[i]).className = "red";
