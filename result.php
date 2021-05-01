@@ -159,7 +159,7 @@ pg_close($dbconn);
                   document.getElementById("1"+myObj.answer[i]).className = "red";
                 } 
                 for (var i = 0; i < myObj.answer2.length; i++) {
-                  document.getElementById("2"+myObj.answer2[i]).className += "red";
+                  document.getElementById("2"+myObj.answer2[i]).className += " red ";
                 } 
                 for (var i = 0; i < myObj.answer3.length; i++) {
                   document.getElementById("3"+myObj.answer3[i]).className = "red";
@@ -182,7 +182,7 @@ pg_close($dbconn);
                   document.getElementById("1"+myObj.answer[i]).className = "green";
                 } 
                 for (var i = 0; i < myObj.answer2.length; i++) {
-                  document.getElementById("2"+myObj.answer2[i]).className +="green";
+                  document.getElementById("2"+myObj.answer2[i]).className +=" green ";
                 } 
                 for (var i = 0; i < myObj.answer3.length; i++) {
                   document.getElementById("3"+myObj.answer3[i]).className = "green";
