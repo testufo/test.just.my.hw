@@ -173,8 +173,8 @@ pg_close($dbconn);
                                               "1" 
                                            ] 
                    ]; 
-                   $arr4 = check_diff_multi($arr2,$arr3,);
-                   $calc = 12*(sizeof($arr4)/sizeof($arr3));
+                   $arr4 = check_diff_multi($arr2,$arr3);
+                   $calc = 12*(sizeof($arr3)-sizeof($arr4)/sizeof($arr3));
                    echo($calc);
                   }
                 }
