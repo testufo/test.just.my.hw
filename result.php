@@ -154,7 +154,7 @@ pg_close($dbconn);
                 ?>
                 <script> 
                 var answer=JSON.parse_str("<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>");
-                alert(answer);
+                alert(answer.answer);
                 </script>
         </div>
     </body>
