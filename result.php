@@ -155,13 +155,13 @@ pg_close($dbconn);
                 <script> 
                 var myObj =  JSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>');
                 for (var i = 0; i < myObj.answer.length; i++) {
-                  document.getElementById("1"+myObj.answer[i]).style.color = "blue";
+                  document.getElementById("1"+myObj.answer[i]).style.background-color = "red";
                 } 
                 for (var i = 0; i < myObj.answer2.length; i++) {
-                  document.getElementById("2"+myObj.answer2[i]).style.color = "blue";
+                  document.getElementById("2"+myObj.answer2[i]).style.background-color = "red";
                 } 
                 for (var i = 0; i < myObj.answer3.length; i++) {
-                  document.getElementById("3"+myObj.answer3[i]).style.color = "blue";
+                  document.getElementById("3"+myObj.answer3[i]).style.background-color = "red";
                 } 
                 </script>
         </div>
