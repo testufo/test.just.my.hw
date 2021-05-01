@@ -173,15 +173,21 @@ pg_close($dbconn);
                                               "1" 
                                            ] 
                    ]; 
-                   $arr4 = array_intersect_assoc($arr2,$arr3);
+                   $arr4 = check_diff_multi($arr2,$arr3,);
                    $calc = 12*(sizeof($arr4)/sizeof($arr3));
-                   echo($calc);
-                   print_r($arr4);
-                   print_r($arr3);
-                   echo(sizeof($arr4));
-                   echo(sizeof($arr3));
                   }
                 }
+                function check_diff_multi($array1, $array2){
+                  $result = array();
+                  foreach($array1 as $key => $val) {
+                       if(isset($array2[$key])){
+                         if(is_array($val) && $array2[$key]){
+                             $result[$key] = check_diff_multi($val, $array2[$key]);
+                         }
+                     } else {
+                         $result[$key] = $val;
+                     }
+                  }
                 ?></h2>
                 <h2 align=center>Результати інших учасників</h2>
                 <?php foreach($us as $arr1){
