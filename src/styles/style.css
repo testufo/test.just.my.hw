@@ -66,15 +66,15 @@ p{
 }
 .red{
   text-shadow: 
-  0 0 5px #ff6e6e,
-  0 0 10px #ff7f6e,
-  0 0 20px #ff906e !important;
+  0 0 5px #ff0000,
+  0 0 10px #ff1e00,
+  0 0 20px #ff3c00 !important;
 }
 .green{
   text-shadow: 
-  0 0 5px #6eff81,
-  0 0 10px #6eff81 ,
-  0 0 20px #6eff81 !important;
+  0 0 5px #4fff67,
+  0 0 10px #4fff67 ,
+  0 0 20px #4bff63 !important;
 }
 .fraction {
   display: inline-table;
