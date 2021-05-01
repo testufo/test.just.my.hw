@@ -175,6 +175,7 @@ pg_close($dbconn);
                    ]; 
                    $arr4 = check_diff_multi($arr2,$arr3,);
                    $calc = 12*(sizeof($arr4)/sizeof($arr3));
+                   echo($calc);
                   }
                 }
                 function check_diff_multi($array1, $array2){
