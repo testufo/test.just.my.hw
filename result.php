@@ -88,19 +88,19 @@ pg_close($dbconn);
                     <span class="numerator">25x<sup>8</sup></span>
                     <span class="denominator">(5x<sup>3</sup>)<sup>4</sup></span>
                   </span></sup></b></p> 
-                  <p id="21"><sup><span class="fraction">
+                  <p><sup><span  id="21" class="fraction">
                     <span class="numerator">25</span>
                     <span class="denominator">x<sup>4</sup></span>
                   </span></sup></p>
-                  <p id="22"><sup><span class="fraction">
+                  <p><sup><span  id="22" class="fraction">
                     <span class="numerator"> 	&nbsp; 	&nbsp;1</span>
                     <span class="denominator">25x<sup>4</sup></span>
                   </span></sup></p>
-                  <p id="23"><sup><span class="fraction">
+                  <p ><sup><span id="23" class="fraction">
                     <span class="numerator">x<sup>4</sup></span>
                     <span class="denominator">25</span>
                   </span></sup></p>
-                  <p id="24"><sup><span class="fraction">
+                  <p><sup><span  id="24" class="fraction">
                     <span class="numerator">5</span>
                     <span class="denominator">x</span>
                   </span></sup></p>
@@ -159,7 +159,7 @@ pg_close($dbconn);
                   document.getElementById("1"+myObj.answer[i]).className = "red";
                 } 
                 for (var i = 0; i < myObj.answer2.length; i++) {
-                  document.getElementById("2"+myObj.answer2[i]).className = "red";
+                  document.getElementById("2"+myObj.answer2[i]).className += "red";
                 } 
                 for (var i = 0; i < myObj.answer3.length; i++) {
                   document.getElementById("3"+myObj.answer3[i]).className = "red";
@@ -182,7 +182,7 @@ pg_close($dbconn);
                   document.getElementById("1"+myObj.answer[i]).className = "green";
                 } 
                 for (var i = 0; i < myObj.answer2.length; i++) {
-                  document.getElementById("2"+myObj.answer2[i]).className ="green";
+                  document.getElementById("2"+myObj.answer2[i]).className +="green";
                 } 
                 for (var i = 0; i < myObj.answer3.length; i++) {
                   document.getElementById("3"+myObj.answer3[i]).className = "green";
