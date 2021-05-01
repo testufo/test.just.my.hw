@@ -163,6 +163,18 @@ pg_close($dbconn);
                 for (var i = 0; i < myObj.answer3.length; i++) {
                   document.getElementById("3"+myObj.answer3[i]).style.background-color = "red";
                 } 
+                for (var i = 0; i < myObj.answer4.length; i++) {
+                  document.getElementById("4"+myObj.answer4[i]).style.background-color = "red";
+                } 
+                for (var i = 0; i < myObj.answer5.length; i++) {
+                  document.getElementById("5"+myObj.answer5[i]).style.background-color = "red";
+                } 
+                for (var i = 0; i < myObj.answer6.length; i++) {
+                  document.getElementById("6"+myObj.answer6[i]).style.background-color = "red";
+                } 
+                for (var i = 0; i < myObj.answer7.length; i++) {
+                  document.getElementById("7"+myObj.answer7[i]).style.background-color = "red";
+                } 
                 </script>
         </div>
     </body>
