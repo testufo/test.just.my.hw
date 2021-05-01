@@ -153,8 +153,10 @@ pg_close($dbconn);
                 }
                 ?>
                 <script> 
-                var answer=JSON.parse_str("<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>");
-                alert(answer.answer);
+                JSON.parseJSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>',function(k, v) {
+                  console.log(k); // пишем имя текущего свойства, последним именем будет ""
+                  return v;       // возвращаем неизменённое значение свойства
+                });
                 </script>
         </div>
     </body>
