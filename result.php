@@ -155,25 +155,25 @@ pg_close($dbconn);
                 <script> 
                 var myObj =  JSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>');
                 for (var i = 0; i < myObj.answer.length; i++) {
-                  document.getElementById("1"+myObj.answer[i]).style.background-color = "red";
+                  document.getElementById("1"+myObj.answer[i]).style.backgroundColor = "red";
                 } 
                 for (var i = 0; i < myObj.answer2.length; i++) {
-                  document.getElementById("2"+myObj.answer2[i]).style.background-color = "red";
+                  document.getElementById("2"+myObj.answer2[i]).style.backgroundColor = "red";
                 } 
                 for (var i = 0; i < myObj.answer3.length; i++) {
-                  document.getElementById("3"+myObj.answer3[i]).style.background-color = "red";
+                  document.getElementById("3"+myObj.answer3[i]).style.backgroundColor = "red";
                 } 
                 for (var i = 0; i < myObj.answer4.length; i++) {
-                  document.getElementById("4"+myObj.answer4[i]).style.background-color = "red";
+                  document.getElementById("4"+myObj.answer4[i]).style.backgroundColor = "red";
                 } 
                 for (var i = 0; i < myObj.answer5.length; i++) {
-                  document.getElementById("5"+myObj.answer5[i]).style.background-color = "red";
+                  document.getElementById("5"+myObj.answer5[i]).style.backgroundColor = "red";
                 } 
                 for (var i = 0; i < myObj.answer6.length; i++) {
-                  document.getElementById("6"+myObj.answer6[i]).style.background-color = "red";
+                  document.getElementById("6"+myObj.answer6[i]).style.backgroundColor = "red";
                 } 
                 for (var i = 0; i < myObj.answer7.length; i++) {
-                  document.getElementById("7"+myObj.answer7[i]).style.background-color = "red";
+                  document.getElementById("7"+myObj.answer7[i]).style.backgroundColor = "red";
                 } 
                 </script>
         </div>
