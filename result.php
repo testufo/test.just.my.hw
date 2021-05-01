@@ -157,6 +157,9 @@ pg_close($dbconn);
                 for (var i = 0; i < myObj.answer.length; i++) {
                   document.getElementById("1"+myObj.answer[i]).style.color = "blue";
                 } 
+                for (var i = 0; i < myObj.answer2.length; i++) {
+                  document.getElementById("2"+myObj.answer2[i]).style.color = "blue";
+                } 
                 </script>
         </div>
     </body>
