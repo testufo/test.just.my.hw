@@ -20,6 +20,7 @@
                 <input type="radio" name="answer[]" value="2">-7;-2<Br>
                 <input type="radio" name="answer[]" value="3">7;-2<Br>
                 <input type="radio" name="answer[]" value="4">-7;2</p>
+<div class="fraction2" top="5" bottom="8"></div>
                 <b><p>Cпростіть вираз&nbsp;&nbsp;<sup><span class="fraction">
                     <span class="numerator">25x<sup>8</sup></span>
                     <span class="denominator">(5x<sup>3</sup>)<sup>4</sup></span>
