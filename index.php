@@ -20,11 +20,7 @@
                 <input type="radio" name="answer[]" value="2">-7;-2<Br>
                 <input type="radio" name="answer[]" value="3">7;-2<Br>
                 <input type="radio" name="answer[]" value="4">-7;2</p>
-<div class="fraction2" top="5" bottom="8"></div>
-                <b><p>Cпростіть вираз&nbsp;&nbsp;<sup><span class="fraction">
-                    <span class="numerator">25x<sup>8</sup></span>
-                    <span class="denominator">(5x<sup>3</sup>)<sup>4</sup></span>
-                  </span></sup></b></p> 
+                <b><p>Cпростіть вираз&nbsp;&nbsp;<span class="math-box" style="border: 1px solid red;"><span class="strut" style="height: 2.008em; vertical-align: -0.686em;"></span><span class="vstack"><div style="top: 0.686em;">(5x<sup>3</sup>)<sup>4</sup></div><div style="top: -0.23em;"><span class="frac-line"></span></div><div style="top: -0.677em;">25x<sup>8</sup></div><span class="baseline-fix"></span></span></span></b></p> 
                 <p><input type="radio" name="answer2[]" value="1" required><sup><span class="fraction">
                     <span class="numerator">25</span>
                     <span class="denominator">x<sup>4</sup></span>
