@@ -68,31 +68,28 @@ p{
   text-shadow: 
   0 0 5px #ff0000,
   0 0 10px #ff1e00,
-  0 0 20px #ff3c00  !important;
+  0 0 30px #ff3c00  !important;
 }
 .green{
   text-shadow: 
   0 0 5px #4fff67,
   0 0 10px #4fff67 ,
-  0 0 20px #4bff63 !important;
+  0 0 30px #4bff63 !important;
 }
 .fraction {
-  display: inline-block;
+  display: inline-table;
   text-shadow:  0 0 1px #6eff81;
   color: rgb(69, 211, 104);
   width: min-content;
   font-size: 20px;
-padding: 0 5px; 
 }
 .numerator {
   text-align: center;
-  padding: 0 5px; 
 }
 .denominator {
   border-top-color: rgb(69, 211, 104);
   border-top-style: groove;
   text-align: center;
-padding: 0 5px; 
 }
 input[type=text] {
   background-color: transparent;
@@ -171,40 +168,4 @@ input[type="checkbox"]:hover {
 }
 input:invalid {
   border: 1px solid red;
-}
-.math-box {
-  display: inline-block;
-}
-.math-box .vstack {
-  display: inline-block;
-  position: relative;
-}
-.math-box .vstack > div {
-  position: relative;
-  text-align: center;
-  height: 0;
-}
-.math-box .baseline-fix {
-  display: inline-table;
-  table-layout: fixed;
-}
-.math-box .frac-line {
-  width: 100%;
-  display: inline-block;
-}
-.math-box .frac-line:before {
-  display: block;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  content: "";
-}
-.math-box .frac-line:after {
-  display: block;
-  margin-top: -1px;
-  border-bottom-style: solid;
-  border-bottom-width: 0.04em;
-  content: "";
-}
-.math-box .strut {
-  display: inline-block; 
 }
