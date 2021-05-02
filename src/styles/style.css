@@ -172,3 +172,24 @@ input[type="checkbox"]:hover {
 input:invalid {
   border: 1px solid red;
 }
+.fraction2 {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 0 0.2em;
+  text-align: center;
+  vertical-align: middle;
+
+  &:before {
+    border-bottom: 1px solid #000;
+    content: attr(top);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+  &:after {
+    content: attr(bottom);
+    display: block;
+    line-height: 1.6em;
+    padding: 0 0.2em;
+  }
+}
