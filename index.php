@@ -14,25 +14,12 @@
                 <input type="text" name="lastname" required pattern="[А-Я]{1}[а-я]{2,20}">
                 <p><b>Електронна адреса</b></p>
                 <input type="email" name="email" required placeholder="example@domen.com">
-                <math>
-  <mfrac bevelled="true">
-     <mfrac>
-        <mi> a </mi>
-        <mi> b </mi>
-     </mfrac>
-     <mfrac>
-        <mi> c </mi>
-        <mi> d </mi>
-     </mfrac>
-  </mfrac>
-</math>
 
                 <p><b>Розв'яжіть рівняння x<sup>2</sup>+5x-14=0</b></p>
                 <p> <input type="radio" name="answer[]" value="1" required>7;2<Br>
                 <input type="radio" name="answer[]" value="2">-7;-2<Br>
                 <input type="radio" name="answer[]" value="3">7;-2<Br>
                 <input type="radio" name="answer[]" value="4">-7;2</p>
-                 <mfrac>numerator denominator</mfrac>
                 <b><p>Cпростіть вираз&nbsp;&nbsp;<sup><span class="fraction">
                     <span class="numerator">25x<sup>8</sup></span>
                     <span class="denominator">(5x<sup>3</sup>)<sup>4</sup></span>
