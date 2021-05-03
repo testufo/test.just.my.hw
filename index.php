@@ -2,6 +2,7 @@
     <head>
     <title> Головна </title>
     <link href="src/styles/style.css" rel="stylesheet" type="text/css">
+    <meta name="google-site-verification" content="yPJRE4W2XMcD-3qK4N40CwGEgA_78ztFYZMcSJ3-u2o" />
     </head>
     <body>
         <div class="content">
