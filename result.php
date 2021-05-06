@@ -1,7 +1,6 @@
 
 <?php
 $get = $_GET;
-$ip = $_SERVER['REMOTE_ADDR'];
 if($get== null){
   echo('<html>
   <head>
@@ -39,8 +38,8 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
   answer TEXT)';
 pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
 
-$query = "INSERT INTO answers(token, firstname, lastname, email, answer, ip) VALUES
-('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr','$ip')";
+$query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
+('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr')";
 pg_query($query);
 
 $an = [null,null];
