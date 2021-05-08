@@ -70,7 +70,6 @@
                  
                 </form>
         </div>
-      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
   <script id="MathJax-script" defer
           src="src/js/es5/tex-mml-chtml.js">
   </script>
