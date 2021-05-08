@@ -2,7 +2,10 @@
     <head>
     <title> Головна </title>
     <link href="src/styles/style.css" rel="stylesheet" type="text/css">
-    <meta name="google-site-verification" content="yPJRE4W2XMcD-3qK4N40CwGEgA_78ztFYZMcSJ3-u2o" />
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
     </head>
     <body>
         <div class="content">
@@ -21,26 +24,12 @@
                 <input type="radio" name="answer[]" value="2">-7;-2<Br>
                 <input type="radio" name="answer[]" value="3">7;-2<Br>
                 <input type="radio" name="answer[]" value="4">-7;2</p>
-                 <b><p>Cпростіть вираз&nbsp;&nbsp;<sup><span class="fraction">
-                    <span class="numerator">25x<sup>8</sup></span>
-                    <span class="denominator">(5x<sup>3</sup>)<sup>4</sup></span>
-                  </span></sup></b></p> 
-                <p><input type="radio" name="answer2[]" value="1" required><sup><span class="fraction">
-                    <span class="numerator">25</span>
-                    <span class="denominator">x<sup>4</sup></span>
-                  </span></sup><Br>
-                <input type="radio" name="answer2[]" value="2"><sup><span class="fraction">
-                    <span class="numerator"> 	&nbsp; 	&nbsp;1</span>
-                    <span class="denominator">25x<sup>4</sup></span>
-                  </span></sup><Br>
-                <input type="radio" name="answer2[]" value="3"><sup><span class="fraction">
-                    <span class="numerator">x<sup>4</sup></span>
-                    <span class="denominator">25</span>
-                  </span></sup><Br>
-                <input type="radio" name="answer2[]" value="4"><sup><span class="fraction">
-                    <span class="numerator">5</span>
-                    <span class="denominator">x</span>
-                  </span></sup></p>
+
+                <b><p>Cпростіть вираз\(\LARGE{ \frac{25x^8}{(5x^2)^4}}\)</b></p> 
+                <p><input type="radio" name="answer2[]" value="1" required>\(\LARGE{\frac{25}{x^4}}\)<Br><Br>
+                <input type="radio" name="answer2[]" value="2">\(\LARGE{\frac{1}{25x^4}}\)<Br><Br>
+                <input type="radio" name="answer2[]" value="3">\(\LARGE{ \frac{x^4}{25}}\)<Br><Br>
+                <input type="radio" name="answer2[]" value="4">\(\LARGE{ \frac{5}{x}}\)</p>
 
                 <p><b>Указати моду для вибірки: 3; 1; 7; 1; 3; 7; 4.</b></p>
                 <p><input type="checkbox" name="answer3[]" value="1" >1<Br>
