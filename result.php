@@ -63,7 +63,7 @@ pg_close($dbconn);
 <link rel="stylesheet" href="src/styles/style.css">
   </style>
     </head>
-    <body background="src/images/metal.png" bgproperties="fixed">
+    <body background="src/images/metal.png">
      
         <div class="content">
            <h2 align=center>Результати тесту</h2>
