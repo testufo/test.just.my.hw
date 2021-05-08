@@ -37,11 +37,11 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
   email TEXT,
   answer TEXT)';
 pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
-
-$query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
-('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr')";
-pg_query($query);
-
+if($get[firstname]!=null, $get[firstname]!="",$get[email]!=null,!=""){
+    $query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
+    ('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr')";
+    pg_query($query);
+}
 $an = [null,null];
 $us = [null,null];
 $query = "SELECT * FROM answers WHERE token="."'".$get["id"]."'";
