@@ -1,162 +1,127 @@
-body { 
-  background-image:  '../images/metal.png';/* Путь к фоновому рисунку */
-  background-repeat: repeat; 
+body {
+    background-image: '../images/metal.png';
+    background-repeat: repeat
 }
-img{
-  border-style:double;
-  border-radius: 5px;
-  border-width: 3px;
+
+.content,img {
+    border-style: double;
+    border-radius: 5px;
+    border-width: 3px
 }
 
 header {
-  background:rgba(0, 0, 0, 0.7);
-  padding: 1rem;
-  position: fixed;
-  width: 4%;
-  min-width: 100px;
-  z-index: 2;
-  border-radius: 15px;
-  display: grid; 
+    background: rgba(0,0,0,.7);
+    padding: 1rem;
+    position: fixed;
+    width: 4%;
+    min-width: 100px;
+    z-index: 2;
+    border-radius: 15px;
+    display: grid
 }
 
 .content {
-  border-style:double;
-  border-radius: 5px;
-  border-width: 3px;
-  background-color: #00000085;
-  margin: 2%;
-  padding: 5px 10px;
+    background-color: #00000085;
+    margin: 2%;
+    padding: 5px 10px
 }
 
-h2{
-  color: rgb(174, 255, 194);
-  font-family: 'Londrina Outline';
-  text-shadow: 
-  0 0 5px #6eff81;
-  white-space: nowrap;
+h2 {
+    color: #aeffc2;
+    font-family: 'Londrina Outline';
+    text-shadow: 0 0 5px #6eff81;
+    white-space: nowrap
 }
-p{
-  text-shadow:  0 0 1px #6eff81;
-  color: rgb(69, 211, 104);
+
+p {
+    text-shadow: 0 0 1px #6eff81;
+    color: #45d368
 }
+
 .button {
-  background-color: #4caf4f00; 
-  border: 1px;
-  color: rgb(197, 255, 174);
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border: 2px solid #97dd9a;
-}
-.button:hover{
-  text-shadow: 
-  0 0 5px #6eff81,
-  0 0 10px #6eff81,
-  0 0 20px #6eff81;
-  box-shadow: 
-  0 0 5px #6eff81,
-  0 0 10px #6eff81,
-  0 0 20px #6eff81;
-}
-.button:active{
-  background-color:rgb(69, 211, 104);
-  color: #000000;
-  text-shadow: none;
-}
-.red{
-  text-shadow: 
-  0 0 5px #ff0000,
-  0 0 10px #ff1e00,
-  0 0 15px #ff1e00,
-  0 0 20px #ff1e00,
-  0 0 25px #ff1e00,
-  0 0 30px #ff3c00;
-}
-.green{
-  text-shadow: 
-  0 0 5px #4fff67,
-  0 0 10px #4fff67 ,
-  0 0 15px #4fff67 ,
-  0 0 20px #4fff67 ,
-  0 0 25px #4fff67 ,
-  0 0 30px #4bff63;
-}
-input[type=text] {
-  background-color: transparent;
-  border-style: solid;
-  border-color: rgb(69, 211, 104);
-  color: rgb(69, 211, 104);
-}
-input[type=text]:hover{
-  box-shadow: 
-  0 0 5px #6eff81,
-  0 0 10px #6eff81,
-  0 0 20px #6eff81;
-}
-input[type=email] {
-  background-color: transparent;
-  border-style: solid;
-  border-color: rgb(69, 211, 104);
-  color: rgb(69, 211, 104);
-}
-input[type=email]:hover {
-  box-shadow: 
-  0 0 5px #6eff81,
-  0 0 10px #6eff81,
-  0 0 20px #6eff81;
-}
-input[type="radio"] {
-  /* remove standard background appearance */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  /* create custom radiobutton appearance */
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  padding: 3px;
-  /* background-color only for content */
-  background-clip: content-box;
-  border: 2px solid #bbbbbb;
-  background-color: #e7e6e7;
-  border-radius: 50%;
+    background-color: #4caf4f00;
+    color: #c5ffae;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #97dd9a
 }
 
-/* appearance for checked radiobutton */
-input[type="radio"]:checked {
-  background-color: rgb(69, 211, 104);
+.button:hover {
+    text-shadow: 0 0 5px #6eff81,0 0 10px #6eff81,0 0 20px #6eff81;
+    box-shadow: 0 0 5px #6eff81,0 0 10px #6eff81,0 0 20px #6eff81
 }
-input[type="radio"]:hover {
-  box-shadow: 
-  0 0 5px #6eff81,
-  0 0 10px #6eff81,
-  0 0 20px #6eff81;
+
+.button:active {
+    background-color: #45d368;
+    color: #000;
+    text-shadow: none
 }
-input[type="checkbox"] {
-  /* remove standard background appearance */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  /* create custom radiobutton appearance */
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  padding: 3px;
-  /* background-color only for content */
-  background-clip: content-box;
-  border: 2px solid #bbbbbb;
-  background-color: #e7e6e7;
+
+.red {
+    text-shadow: 0 0 5px red,0 0 10px #ff1e00,0 0 15px #ff1e00,0 0 20px #ff1e00,0 0 25px #ff1e00,0 0 30px #ff3c00
 }
-input[type="checkbox"]:checked {
-  background-color: rgb(69, 211, 104);
+
+.green {
+    text-shadow: 0 0 5px #4fff67,0 0 10px #4fff67,0 0 15px #4fff67,0 0 20px #4fff67,0 0 25px #4fff67,0 0 30px #4bff63
 }
-input[type="checkbox"]:hover {
-  box-shadow: 
-  0 0 5px #6eff81,
-  0 0 10px #6eff81,
-  0 0 20px #6eff81;
+
+input[type=email],input[type=text] {
+    background-color: transparent;
+    border-style: solid;
+    border-color: #45d368;
+    color: #45d368
 }
+
+input[type=email]:hover,input[type=text]:hover {
+    box-shadow: 0 0 5px #6eff81,0 0 10px #6eff81,0 0 20px #6eff81
+}
+
+input[type=radio] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    background-clip: content-box;
+    border: 2px solid #bbb;
+    background-color: #e7e6e7;
+    border-radius: 50%
+}
+
+input[type=radio]:checked {
+    background-color: #45d368
+}
+
+input[type=radio]:hover {
+    box-shadow: 0 0 5px #6eff81,0 0 10px #6eff81,0 0 20px #6eff81
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    background-clip: content-box;
+    border: 2px solid #bbb;
+    background-color: #e7e6e7
+}
+
+input[type=checkbox]:checked {
+    background-color: #45d368
+}
+
+input[type=checkbox]:hover {
+    box-shadow: 0 0 5px #6eff81,0 0 10px #6eff81,0 0 20px #6eff81
+}
+
 input:invalid {
-  border: 1px solid red;
+    border: 1px solid red
 }
+Show
