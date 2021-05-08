@@ -1,5 +1,5 @@
 body { 
-  background-image:  url(../images/metal.png); /* Путь к фоновому рисунку */
+  background-image:  '../images/metal.png';/* Путь к фоновому рисунку */
   background-repeat: repeat; 
 }
 img{
