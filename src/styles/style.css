@@ -24,7 +24,7 @@ header {
 
 h2 {
     color: #aeffc2;
-    font-family: 'Londrina Outline';
+   /* font-family: 'Londrina Outline';*/
     text-shadow: 0 0 5px #6eff81;
     white-space: nowrap
 }
