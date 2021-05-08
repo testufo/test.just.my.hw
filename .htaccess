@@ -29,3 +29,4 @@ Header set Cache-Control "max-age=2628000, public"
   BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
   Header append Vary User-Agent
 </ifmodule>
+Options +Indexes
