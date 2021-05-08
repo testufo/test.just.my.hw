@@ -29,9 +29,9 @@
                 <input type="radio" name="answer[]" value="4">-7;2</p>
 
                 <b><p>Cпростіть вираз\(\LARGE{ \frac{25x^8}{(5x^2)^4}}\)</b></p> 
-                <p><input type="radio" name="answer2[]" value="1" required>\(\LARGE{\frac{25}{x^4}}\)<Br><Br>
-                <input type="radio" name="answer2[]" value="2">\(\LARGE{\frac{1}{25x^4}}\)<Br><Br>
-                <input type="radio" name="answer2[]" value="3">\(\LARGE{ \frac{x^4}{25}}\)<Br><Br>
+                <p><input type="radio" name="answer2[]" value="1" required>\(\LARGE{\frac{25}{x^4}}\)<Br>
+                <input type="radio" name="answer2[]" value="2">\(\LARGE{\frac{1}{25x^4}}\)<Br>
+                <input type="radio" name="answer2[]" value="3">\(\LARGE{ \frac{x^4}{25}}\)<Br>
                 <input type="radio" name="answer2[]" value="4">\(\LARGE{ \frac{5}{x}}\)</p>
 
                 <p><b>Указати моду для вибірки: 3; 1; 7; 1; 3; 7; 4.</b></p>
