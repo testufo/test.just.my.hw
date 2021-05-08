@@ -71,7 +71,7 @@ p{
   0 0 15px #ff1e00,
   0 0 20px #ff1e00,
   0 0 25px #ff1e00,
-  0 0 30px #ff3c00  !important;
+  0 0 30px #ff3c00;
 }
 .green{
   text-shadow: 
@@ -80,22 +80,7 @@ p{
   0 0 15px #4fff67 ,
   0 0 20px #4fff67 ,
   0 0 25px #4fff67 ,
-  0 0 30px #4bff63 !important;
-}
-.fraction {
-  display: inline-table;
-  text-shadow:  0 0 1px #6eff81;
-  color: rgb(69, 211, 104);
-  width: min-content;
-  font-size: 20px;
-}
-.numerator {
-  text-align: center;
-}
-.denominator {
-  border-top-color: rgb(69, 211, 104);
-  border-top-style: groove;
-  text-align: center;
+  0 0 30px #4bff63;
 }
 input[type=text] {
   background-color: transparent;
