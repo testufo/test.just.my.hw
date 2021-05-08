@@ -5,10 +5,6 @@
 <noscript><link rel="stylesheet" href="src/styles/style.css"></noscript>
   <style type="text/css">
    .content {
-      border-style:double;
-      border-radius: 5px;
-      border-width: 3px;
-      background-color: #00000085;
       margin: 2%;
       padding: 5px 10px;
   }
