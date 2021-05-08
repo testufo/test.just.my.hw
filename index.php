@@ -1,7 +1,8 @@
 <html>
     <head>
     <title> Головна </title>
-    <link href="src/styles/style.css" rel="stylesheet" type="text/css" defer>
+<link rel="preload" href="src/styles/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="src/styles/style.css"></noscript>
     </head>
     <body>
         <div class="content">
