@@ -3,7 +3,7 @@
     <title> Головна </title>
     <link rel="stylesheet" href="src/styles/style.css">
     </head>
-    <body>
+    <body background="/images/metal.png">
         <div class="content">
             <h2 align=center>Тест з математики</h2>
             <img align=right style="margin-right:10%;" width="400" height="200" src="src/images/ds_461390782.jpg" loading="lazy"></img>
