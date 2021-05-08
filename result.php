@@ -141,8 +141,9 @@ pg_close($dbconn);
                 }
                 ?>
         </div>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
-        <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+  <script id="MathJax-script" defer
+          src="src/js/es5/tex-mml-chtml.js">
+  </script>
                 <script defer> 
                 var myObj =  JSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>');
                 for (var i = 0; i < myObj.answer.length; i++) {
