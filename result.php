@@ -1,7 +1,7 @@
 
 <?php
 $get = $_GET;
-if($get== null){
+if($get["id"]== null){
   echo('<html>
   <head>
   <title> Результати </title>
@@ -37,7 +37,7 @@ $query = 'CREATE TABLE IF NOT EXISTS answers (
   email TEXT,
   answer TEXT)';
 pg_query($query) or die('Ошибка запроса: ' . pg_last_error());
-if($get[firstname]!=null, $get[firstname]!="",$get[email]!=null,!=""){
+if($get["firstname"]!=null, $get["firstname"]!="",$get["email"]!=null,!=""){
     $query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
     ('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr')";
     pg_query($query);
