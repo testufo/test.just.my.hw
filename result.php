@@ -1,5 +1,6 @@
 
 <?php
+header('Cache-Control: public');
 $get = $_GET;
 if($get== null){
   echo('<html>
