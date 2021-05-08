@@ -90,9 +90,9 @@ pg_close($dbconn);
         <p id="14">-7;2</p>
 
         <b><p>Cпростіть вираз\(\LARGE{ \frac{25x^8}{(5x^2)^4}}\)</b></p> 
-                  <p id="21">\(\LARGE{\frac{25}{x^4}}\) </p>
-                  <p id="22">\(\LARGE{\frac{1}{25x^4}}\) </p>
-                  <p id="23">\(\LARGE{ \frac{x^4}{25}}\) </p>
+                  <p id="21">\(\LARGE{\frac{25}{x^4}}\) </p><br>
+                  <p id="22">\(\LARGE{\frac{1}{25x^4}}\) </p><br>
+                  <p id="23">\(\LARGE{ \frac{x^4}{25}}\) </p><br>
                   <p id="24"> \(\LARGE{ \frac{5}{x}}\)</p>
            
                 <p><b>Указати моду для вибірки: 3; 1; 7; 1; 3; 7; 4.</b></p>
