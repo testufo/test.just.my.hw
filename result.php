@@ -60,10 +60,7 @@ pg_close($dbconn);
 <html>
     <head>
     <title> Результати </title>
-    <meta http-equiv="Cache-Control" content="public" />
     <link href="src/styles/style.css" rel="stylesheet" type="text/css" link rel="preload" as="style">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
-        <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
     </head>
     <body>
      
@@ -142,6 +139,9 @@ pg_close($dbconn);
                   }
                 }
                 ?>
+        </div>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
                 <script defer> 
                 var myObj =  JSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>');
                 for (var i = 0; i < myObj.answer.length; i++) {
@@ -190,6 +190,5 @@ pg_close($dbconn);
                 } 
                 console.log("OK");
                 </script>
-        </div>
     </body>
 </html>
