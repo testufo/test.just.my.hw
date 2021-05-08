@@ -7,7 +7,7 @@ if($get== null){
   <title> Результати </title>
   <link href="src/styles/style.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body background="/images/metal.png">
   <div class="content">
   <h2 align=center>Спочатку пройдіть тест</h2>
   </div>
@@ -63,7 +63,7 @@ pg_close($dbconn);
 <link rel="stylesheet" href="src/styles/style.css">
   </style>
     </head>
-    <body>
+    <body background="/images/metal.png">
      
         <div class="content">
            <h2 align=center>Результати тесту</h2>
