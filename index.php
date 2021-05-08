@@ -1,12 +1,7 @@
 <html>
     <head>
     <title> Головна </title>
-<meta http-equiv="Cache-Control" content="public" />
     <link href="src/styles/style.css" rel="stylesheet" type="text/css" defer>
-      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
-  <script id="MathJax-script" defer
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
     </head>
     <body>
         <div class="content">
@@ -75,5 +70,9 @@
                 </form>
             <script>document.getElementById("id").value = Math.random().toString();</script>
         </div>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+  <script id="MathJax-script" defer
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
     </body>
 </html>
