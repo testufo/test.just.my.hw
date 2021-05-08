@@ -1,3 +1,4 @@
+<?php echo("."); ?>
 <html>
     <head>
     <title> Головна </title>
