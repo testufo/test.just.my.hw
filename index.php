@@ -4,6 +4,7 @@
     </head>
     <body>
         <div class="content">
+               <link rel="stylesheet" href="src/styles/style.css">
             <h2 align=center>Тест з математики</h2>
             <img align=right style="margin-right:10%;" width="400" height="200" src="src/images/ds_461390782.jpg" loading="lazy"></img>
             <form  id="math-form" action="https://q1p.herokuapp.com/result.php" >
@@ -67,7 +68,6 @@
                 <p><input id="submit-form"  class="button" type="submit" value="Перевірити"></p>
                 </form>
         </div>
-       <link rel="stylesheet" href="src/styles/style.css">
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
   <script id="MathJax-script" defer
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
