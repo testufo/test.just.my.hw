@@ -1,14 +1,7 @@
 <html>
     <head>
     <title> Головна </title>
-<link rel="preload" href="src/styles/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="src/styles/style.css"></noscript>
-  <style type="text/css">
-   .content {
-      margin: 2%;
-      padding: 5px 10px;
-  }
-  </style>
+<link rel="preload" href="src/styles/style.css" as="style">
     </head>
     <body>
         <div class="content">
