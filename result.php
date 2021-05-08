@@ -61,6 +61,10 @@ pg_close($dbconn);
     <head>
     <title> Результати </title>
     <link href="src/styles/style.css" rel="stylesheet" type="text/css">
+          <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
     </head>
     <body>
      
@@ -85,26 +89,11 @@ pg_close($dbconn);
         <p id="13">7;-2</p>
         <p id="14">-7;2</p>
 
-        <b><p>Cпростіть вираз&nbsp;&nbsp;<sup><span class="fraction">
-                    <span class="numerator">25x<sup>8</sup></span>
-                    <span class="denominator">(5x<sup>3</sup>)<sup>4</sup></span>
-                  </span></sup></b></p> 
-                  <p><sup><span  id="21" class="fraction">
-                    <span class="numerator">25</span>
-                    <span class="denominator">x<sup>4</sup></span>
-                  </span></sup></p>
-                  <p><sup><span  id="22" class="fraction">
-                    <span class="numerator"> 	&nbsp; 	&nbsp;1</span>
-                    <span class="denominator">25x<sup>4</sup></span>
-                  </span></sup></p>
-                  <p ><sup><span id="23" class="fraction">
-                    <span class="numerator">x<sup>4</sup></span>
-                    <span class="denominator">25</span>
-                  </span></sup></p>
-                  <p><sup><span  id="24" class="fraction">
-                    <span class="numerator">5</span>
-                    <span class="denominator">x</span>
-                  </span></sup></p>
+        <b><p>Cпростіть вираз\(\LARGE{ \frac{25x^8}{(5x^2)^4}}\)</b></p> 
+                  <p id="21">\(\LARGE{\frac{25}{x^4}}\) </p>
+                  <p id="22">\(\LARGE{\frac{1}{25x^4}}\) </p>
+                  <p id="23">\(\LARGE{ \frac{x^4}{25}}\) </p>
+                  <p id="24"> \(\LARGE{ \frac{5}{x}}\)</p>
            
                 <p><b>Указати моду для вибірки: 3; 1; 7; 1; 3; 7; 4.</b></p>
                 <p id="31">1</p>
