@@ -65,13 +65,14 @@
                 <input type="radio" name="answer7[]" value="4">a<sup>3</sup>+b<sup>3</sup></p>
 
                 <input hidden id="id" type="text" name="id" >
+            <script>document.getElementById("id").value = Math.random().toString();</script>
                 <p><input id="submit-form"  class="button" type="submit" value="Перевірити"></p>
+                 
                 </form>
         </div>
       <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
   <script id="MathJax-script" defer
           src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
-            <script>document.getElementById("id").value = Math.random().toString();</script>
     </body>
 </html>
