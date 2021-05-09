@@ -4,22 +4,6 @@
     border-radius: 5px;
     border-width: 3px
 }
-.fraction, .top, .bottom {
-    padding: 0 5px;    
-}
-
-.fraction {
-    display: inline-block;
-    text-align: center;   
-    text-shadow: 0 0 1px #6eff81;
-    font-family: 'Londrina Outline';
-    color: #45d368;
-}
-
-.bottom{
-    border-top: 1px solid #000;
-    display: block;
-}
 header {
     background: rgba(0,0,0,.7);
     padding: 1rem;
