@@ -3,7 +3,7 @@
     <title> Головна </title>
     </head>
     <body background="https://res.cloudinary.com/hq8rromki/image/upload/v1620587414/metal_uelsqp.png">
-         <link rel="stylesheet" href="https://res.cloudinary.com/hq8rromki/raw/upload/v1620587994/style_xas50x.css">
+         <link rel="stylesheet" href="src/styles/style.css">
         <div class="content">
             <h2 align=center>Тест з математики</h2>
             <img align=right style="margin-right:10%;" width="400" height="200" src="https://res.cloudinary.com/hq8rromki/image/upload/c_thumb,w_200,g_face/v1620587415/ds_461390782_uqdpjr.jpg" loading="lazy"></img>
