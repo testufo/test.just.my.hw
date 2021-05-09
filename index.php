@@ -20,11 +20,7 @@
                 <input type="radio" name="answer[]" value="2">-7;-2<Br>
                 <input type="radio" name="answer[]" value="3">7;-2<Br>
                 <input type="radio" name="answer[]" value="4">-7;2</p>
-                    <b><p>Cпростіть вираз</p> <div class="fraction">
-    <span class="top">25x<sup>8</sup></span>
-                    <span class="bottom">(5x<sup>2</sup>)<sup>4<sup></span>
-</div>  <p>
-\(\LARGE{ \frac{25x^8}{(5x^2)^4}}\)</b></p> 
+                    <b><p>Cпростіть вираз  \(\LARGE{ \frac{25x^8}{(5x^2)^4}}\)</b></p> 
                 <p><input type="radio" name="answer2[]" value="1" required>\(\LARGE{\frac{25}{x^4}}\)<Br><Br>
                 <input type="radio" name="answer2[]" value="2">\(\LARGE{\frac{1}{25x^4}}\)<Br><Br>
                 <input type="radio" name="answer2[]" value="3">\(\LARGE{ \frac{x^4}{25}}\)<Br><Br>
