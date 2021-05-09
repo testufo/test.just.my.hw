@@ -1,4 +1,4 @@
-<html>
+<html manifest="example.appcache">
     <head>
     <title> Головна </title>
     </head>
