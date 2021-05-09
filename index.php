@@ -36,7 +36,7 @@
                 <input type="radio" name="answer[]" value="3">7;-2<Br>
                 <input type="radio" name="answer[]" value="4">-7;2</p>
 <div class="fraction">
-    <span class="top">25x<SUP>8</sup></span>
+    <span class="top">25x<sup>8</sup></span>
     <span class="bottom">5x<sup>2</sup></span>
 </div>
                 <b><p>Cпростіть вираз\(\LARGE{ \frac{25x^8}{(5x^2)^4}}\)</b></p> 
