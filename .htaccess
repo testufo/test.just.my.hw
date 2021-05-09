@@ -1,4 +1,4 @@
-Header add "Expires" "Mon, 28 Jul 2014 23:30:00 GMT"
+Header add "Expires" "Mon, 28 Jul 2058 23:30:00 GMT"
 Header add "Cache-Control" "max-age=315360000"
 <ifmodule mod_deflate.c>
   # Compress HTML, CSS, JavaScript, Text, XML and fonts
