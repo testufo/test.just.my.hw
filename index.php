@@ -2,7 +2,7 @@
     <head>
     <title> Головна </title>
     </head>
-    <body background="src/images/metal.png">
+    <body background="https://res.cloudinary.com/hq8rromki/image/upload/v1620587414/metal_uelsqp.png">
          <link rel="stylesheet" href="src/styles/style.css">
         <div class="content">
             <h2 align=center>Тест з математики</h2>
