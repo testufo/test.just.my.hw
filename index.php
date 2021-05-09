@@ -1,21 +1,6 @@
 <html>
     <head>
     <title> Головна </title>
-    <style>
-     .fraction, .top, .bottom {
-    padding: 0 5px;    
-}
-
-.fraction {
-    display: inline-block;
-    text-align: center;    
-}
-
-.bottom{
-    border-top: 1px solid #000;
-    display: block;
-}
-    </style>
     </head>
     <body background="https://res.cloudinary.com/hq8rromki/image/upload/v1620587414/metal_uelsqp.png">
          <link rel="stylesheet" href="src/styles/style.css">
@@ -35,11 +20,10 @@
                 <input type="radio" name="answer[]" value="2">-7;-2<Br>
                 <input type="radio" name="answer[]" value="3">7;-2<Br>
                 <input type="radio" name="answer[]" value="4">-7;2</p>
-<div class="fraction">
+                <b><p>Cпростіть вираз <div class="fraction">
     <span class="top">25x<sup>8</sup></span>
-    <span class="bottom">5x<sup>2</sup></span>
-</div>
-                <b><p>Cпростіть вираз\(\LARGE{ \frac{25x^8}{(5x^2)^4}}\)</b></p> 
+                    <span class="bottom">(5x<sup>2</sup>)<sup>4<sup></span>
+</div>\(\LARGE{ \frac{25x^8}{(5x^2)^4}}\)</b></p> 
                 <p><input type="radio" name="answer2[]" value="1" required>\(\LARGE{\frac{25}{x^4}}\)<Br><Br>
                 <input type="radio" name="answer2[]" value="2">\(\LARGE{\frac{1}{25x^4}}\)<Br><Br>
                 <input type="radio" name="answer2[]" value="3">\(\LARGE{ \frac{x^4}{25}}\)<Br><Br>
