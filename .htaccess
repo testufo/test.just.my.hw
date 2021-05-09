@@ -1,6 +1,13 @@
 Header set Cache-Control "max-age=2628000, public"
 Header set Connection keep-alive
+# Turn off the ETags
+Header unset ETag
+FileETag None
 
+# Turn off the Last Modified header except for html docs
+<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css)$">
+Header unset Last-Modified
+</FilesMatch>
 <IfModule mod_headers.c>
     # WEEK
     <FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
