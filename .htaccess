@@ -1,6 +1,18 @@
 Header set Cache-Control "max-age=2628000, public"
 Header set Connection keep-alive
 
+<IfModule mod_headers.c>
+    # WEEK
+    <FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+
+    # WEEK
+    <FilesMatch "\.(js|css|swf)$">
+        Header set Cache-Control "max-age=604800"
+    </FilesMatch>
+</IfModule>
+
 AddHandler application/x-httpd-php .html
 AddHandler cgi-script .pl .py .jsp .asp .htm .shtml .sh .cgi
 AddType application/x-javascript .js
