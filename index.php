@@ -1,5 +1,6 @@
 <html manifest="example.appcache">
     <head>
+    <meta http-equiv="Cache-control" content="public">
     <title> Головна </title>
     </head>
     <body background="https://res.cloudinary.com/hq8rromki/image/upload/v1620587414/metal_uelsqp.png">
