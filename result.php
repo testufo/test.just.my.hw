@@ -63,7 +63,7 @@ pg_close($dbconn);
 <link rel="stylesheet" href="src/styles/style.css">
   </style>
     </head>
-    <body background="src/images/metal.png">
+    <body background="https://res.cloudinary.com/hq8rromki/image/upload/v1620587414/metal_uelsqp.png">
      
         <div class="content">
            <h2 align=center>Результати тесту</h2>
