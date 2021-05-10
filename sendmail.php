@@ -15,10 +15,10 @@ function sendmail($id, $mail){
   $mail->Password   = "tfAp6BHUKrtn2zK";
 
   $mail->IsHTML(true);
-  $mail->AddAddress("dd4dd5.yv@gmail.com");
+  $mail->AddAddress($mail);
   $mail->SetFrom("valentynmail.tk@gmail.com", "valentyn.tk");
   $mail->Subject = "Дякую за заповнення форми!";
-  $content = "<!doctype html>
+  $content = '<!doctype html>
 <html lang="en-US">
 
 <head>
@@ -61,7 +61,7 @@ function sendmail($id, $mail){
                     <p style="color:#455056; font-size:15px;line-height:24px; margin:0;">
 Ви завжди можете переглянути свій результат тому, що він надійно збрежений у базы данних PostgreSQL : )
                     </p>
-                    <a href="valentyn.tk/result.php?id="+$id style="background:#20e277;text-decoration:none !important; font-weight:500; margin-top:35px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block;border-radius:50px;">Переглянути результат!</a>
+                    <a href="valentyn.tk/result.php?id="'.$id.' style="background:#20e277;text-decoration:none !important; font-weight:500; margin-top:35px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block;border-radius:50px;">Переглянути результат!</a>
                   </td>
                 </tr>
                 <tr>
@@ -81,7 +81,7 @@ function sendmail($id, $mail){
   <!--/100% body table-->
 </body>
 
-</html>";
+</html>';
 
   $mail->MsgHTML($content); 
   if(!$mail->Send()) {
