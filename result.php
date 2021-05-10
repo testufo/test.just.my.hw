@@ -61,11 +61,11 @@ pg_close($dbconn);
     <head>
     <title> Результати </title>
 <link rel="stylesheet" href="src/styles/style.css">
-    <script id="MathJax-script" defer
+    <script id="MathJax-script" async
           src="src/js/es5/tex-mml-chtml.js">
   </script>
     </head>
-    <body background="https://res.cloudinary.com/hq8rromki/image/upload/v1620587414/metal_uelsqp.png">
+    <body background="src/images/metal.png">
      
         <div class="content">
            <h2 align=center>Результати тесту</h2>
