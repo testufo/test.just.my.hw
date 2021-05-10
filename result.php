@@ -1,5 +1,6 @@
 
 <?php
+include 'sendmail.php';
 $get = $_GET;
 if($get["id"]== null){
   echo('<html>
