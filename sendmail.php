@@ -15,7 +15,7 @@ function sendmail($id, $mail){
   $mail->Password   = "tfAp6BHUKrtn2zK";
 
   $mail->IsHTML(true);
-  $mail->AddAddress(strval($mail));
+  $mail->AddAddress($mail);
   $mail->SetFrom("valentynmail.tk@gmail.com", "valentyn.tk");
   $mail->Subject = "Дякую за заповнення форми!";
   $content = '<!doctype html>
