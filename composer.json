@@ -1,7 +1,7 @@
 {
   "require": {
-    "mailgun/mailgun-php":"*.*.*",
-    "kriswallsmith/buzz":"*.*.*",
-    "nyholm/psr7":"*.*.*"
+    "mailgun/mailgun-php":"1.0.*",
+    "kriswallsmith/buzz":"1.0.*",
+    "nyholm/psr7":"1.0.*"
   }
 }
