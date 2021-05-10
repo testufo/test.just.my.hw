@@ -13,12 +13,12 @@
   $mail->SMTPSecure = "tls";
   $mail->Port       = 587;
   $mail->Host       = "smtp.gmail.com";
-  $mail->Username   = "your-email@gmail.com";
-  $mail->Password   = "your-gmail-password";
+  $mail->Username   = "valentynmail.tk@gmail.com";
+  $mail->Password   = "tfAp6BHUKrtn2zK";
 
   $mail->IsHTML(true);
-  $mail->AddAddress("recipient-email", "recipient-name");
-  $mail->SetFrom("your-email@gmail.com", "set-from-name");
+  $mail->AddAddress("dd4dd5.yv@gmail.com");
+  $mail->SetFrom("valentynmail.tk@gmail.com", "set-from-name");
   $mail->AddReplyTo("reply-to-email", "reply-to-name");
   $mail->AddCC("cc-recipient-email", "cc-recipient-name");
   $mail->Subject = "Test is Test Email sent via Gmail SMTP Server using PHP Mailer";
