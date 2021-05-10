@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 use Mailgun\Mailgun;
 
 // First, instantiate the SDK with your API credentials
-$mg = Mailgun::create('4ff3e607f0b0f51202b766d287a900a3-602cc1bf-ece26f0a', 'https://api.eu.mailgun.net'); // For EU servers
+$mg = Mailgun::create('4ff3e607f0b0f51202b766d287a900a3-602cc1bf-ece26f0a', 'https://api.mailgun.net/v3/sandbox252a4ec668564d6296482bda252a3024.mailgun.org'); // For EU servers
 
 // Now, compose and send your message.
 // $mg->messages()->send($domain, $params);
