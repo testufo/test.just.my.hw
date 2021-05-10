@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/vendor/autoload.php';
 $client = new http\Client;
 $request = new http\Client\Request;
 $request->setRequestUrl('https://be.trustifi.com/api/i/v1/email');
