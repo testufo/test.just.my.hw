@@ -82,7 +82,6 @@
 </body>
 
 </html>';
-echo($ident);
   $mail->MsgHTML($content); 
   if(!$mail->Send()) {
     return 1;
