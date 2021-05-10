@@ -1,33 +1,15 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
-$client = new http\Client;
-$request = new http\Client\Request;
-$request->setRequestUrl('https://be.trustifi.com/api/i/v1/email');
-$request->setRequestMethod('POST');
-$body = new http\Message\Body;
-$body->append('{
-  "recipients": [{"email": "dd4dd5.yv@gmail.com"}],
-  "lists": [],
-  "contacts": [],
-  "attachments": [],
-  "title": "Title",
-  "html": "Body",
-  "methods": { 
-    "postmark": false,
-    "secureSend": false,
-    "encryptContent": false,
-    "secureReply": false 
-  }
-}');
-$request->setBody($body);
-$request->setOptions(array());
-$request->setHeaders(array(
-  'x-trustifi-key' => 'fff5ae3b541a6bc10ded62ea0a184310c663f2c29ec0be49',
-  'x-trustifi-secret' => '790388bd035f9ab10ad86700055b4743',
-  'Content-Type' => 'application/json'
+# Include the Autoloader (see "Libraries" for install instructions)
+require 'vendor/autoload.php';
+use Mailgun\Mailgun;
+# Instantiate the client.
+$mgClient = new Mailgun('4ff3e607f0b0f51202b766d287a900a3-602cc1bf-ece26f0a');
+$domain = "YOUR_DOMAIN_NAME";
+# Make the call to the client.
+$result = $mgClient->sendMessage($domain, array(
+	'from'	=> 'Excited User <mailgun@sandbox252a4ec668564d6296482bda252a3024.mailgun.org>',
+	'to'	=> 'Baz <dd4dd5.yv@gmail.com>',
+	'subject' => 'Hello',
+	'text'	=> 'Testing some Mailgun awesomness!'
 ));
-$client->enqueue($request)->send();
-$response = $client->getResponse();
-echo $response->getBody();
-
 ?>
