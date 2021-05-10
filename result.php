@@ -61,7 +61,7 @@ pg_close($dbconn);
     <head>
     <title> Результати </title>
 <link rel="stylesheet" href="src/styles/style.css">
-    <script id="MathJax-script"
+    <script id="MathJax-script" defer
           src="src/js/es5/tex-mml-chtml.js">
   </script>
     </head>
