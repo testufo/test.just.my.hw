@@ -5,7 +5,7 @@
   function sendmail($ident, $usermail){
   $mail = new PHPMailer();
   $mail->IsSMTP();
-
+$mail->CharSet = 'UTF-8';
   $mail->SMTPDebug  = 0;  
   $mail->SMTPAuth   = TRUE;
   $mail->SMTPSecure = "tls";
