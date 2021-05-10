@@ -1,6 +1,9 @@
 <html>
     <head>
     <title> Головна </title>
+  <script id="MathJax-script" defer
+          src="src/js/es5/tex-mml-chtml.js">
+  </script>
     </head>
     <body background="src/images/metal.png">
          <link rel="stylesheet" href="src/styles/style.css">
@@ -69,8 +72,5 @@
                  
                 </form>
         </div>
-  <script id="MathJax-script" defer
-          src="src/js/es5/tex-mml-chtml.js">
-  </script>
     </body>
 </html>
