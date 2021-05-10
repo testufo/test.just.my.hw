@@ -2,7 +2,7 @@
   require 'vendor/autoload.php';
   use PHPMailer\PHPMailer\PHPMailer;
   use PHPMailer\PHPMailer\Exception;
-function sendmail($id, $mail){
+  function sendmail($id, $usermail){
   $mail = new PHPMailer();
   $mail->IsSMTP();
 
@@ -15,7 +15,7 @@ function sendmail($id, $mail){
   $mail->Password   = "tfAp6BHUKrtn2zK";
 
   $mail->IsHTML(true);
-  $mail->AddAddress($mail);
+  $mail->AddAddress($usermail);
   $mail->SetFrom("valentynmail.tk@gmail.com", "valentyn.tk");
   $mail->Subject = "Дякую за заповнення форми!";
   $content = '<!doctype html>
@@ -89,6 +89,5 @@ function sendmail($id, $mail){
     var_dump($mail);
   } else {
     return 0;
-  }
   }
 ?>
