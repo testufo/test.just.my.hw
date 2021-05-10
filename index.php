@@ -2,11 +2,11 @@
     <head>
     <title> Головна </title>
     </head>
-    <body background="https://res.cloudinary.com/hq8rromki/image/upload/v1620587414/metal_uelsqp.png">
+    <body background="src/images/metal.png">
          <link rel="stylesheet" href="src/styles/style.css">
         <div class="content">
             <h2 align=center>Тест з математики</h2>
-            <img align=right style="margin-right:10%;" width="400" height="200" src="https://res.cloudinary.com/hq8rromki/image/upload/c_thumb,w_200,g_face/v1620587415/ds_461390782_uqdpjr.jpg" loading="lazy"></img>
+            <img align=right style="margin-right:10%;" width="400" height="200" src="src/images/ds_461390782.jpg" loading="lazy"></img>
             <form  id="math-form" action="https://q1p.herokuapp.com/result.php" >
                 <p><b>Ім'я</b></p>
                 <input type="text" name="firstname" required pattern="[А-Я]{1}[а-я]{2,20}"> 
