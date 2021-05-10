@@ -25,7 +25,7 @@
                 <input type="radio" name="answer[]" value="4">-7;2</p>
 <style>
 .min{
-    min-height=266px;
+    min-height: 266px;
     }
                     </style>
 <div class="min">
