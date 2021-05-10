@@ -42,7 +42,7 @@ if($get["firstname"]!=null && $get["firstname"]!="" && $get["email"]!=null){
     $query = "INSERT INTO answers(token, firstname, lastname, email, answer) VALUES
     ('$get[id]', '$get[firstname]', '$get[lastname]', '$get[email]', '$answerr')";
     pg_query($query);
-  sendmail($get["id"], $get["email"];
+  sendmail($get["id"], $get["email"]);
 }
 $an = [null,null];
 $us = [null,null];
