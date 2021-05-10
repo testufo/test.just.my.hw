@@ -61,7 +61,9 @@ pg_close($dbconn);
     <head>
     <title> Результати </title>
 <link rel="stylesheet" href="src/styles/style.css">
-  </style>
+    <script id="MathJax-script" defer
+          src="src/js/es5/tex-mml-chtml.js">
+  </script>
     </head>
     <body background="https://res.cloudinary.com/hq8rromki/image/upload/v1620587414/metal_uelsqp.png">
      
@@ -141,9 +143,6 @@ pg_close($dbconn);
                 }
                 ?>
         </div>
-  <script id="MathJax-script" defer
-          src="src/js/es5/tex-mml-chtml.js">
-  </script>
                 <script defer> 
                 var myObj =  JSON.parse('<?php foreach($an as $arr1){ if($arr1!=null){print_r($arr1["answer"]); } }?>');
                 for (var i = 0; i < myObj.answer.length; i++) {
