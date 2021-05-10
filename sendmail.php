@@ -59,7 +59,7 @@ $mail->CharSet = 'UTF-8';
                     <h1 style="color:#1e1e2d; font-weight:500; margin:0;font-size:32px;font-family:\'Rubik\',sans-serif;">Дякую за заповнення форми!</h1>
                     <span style="display:inline-block; vertical-align:middle; margin:29px 0 26px; border-bottom:1px solid #cecece; width:100px;"></span>
                     <p style="color:#455056; font-size:15px;line-height:24px; margin:0;">
-Ви завжди можете переглянути свій результат тому, що він надійно збрежений у базы данних PostgreSQL : )
+Ви завжди можете переглянути свій результат тому, що він надійно збрежений у базi данних PostgreSQL : )
                     </p>
                     <a href="valentyn.tk/result.php?id='.$ident.'" style="background:#20e277;text-decoration:none !important; font-weight:500; margin-top:35px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block;border-radius:50px;">Переглянути результат!</a>
                   </td>
