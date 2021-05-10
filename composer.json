@@ -1,1 +1,7 @@
-
+{
+  "require": {
+    "mailgun/mailgun-php",
+    "kriswallsmith/buzz",
+    "nyholm/psr7"
+  }
+}
