@@ -93,11 +93,10 @@
 <html>
     <head>
     <title>Результат</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="/src/styles/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-    <div class="container">
-        <div class="bg-light p-5 rounded">
+        <div class="content">
             <div style="text-align: center;">
                 <div style="display: inline-block; text-align: left;">
                 <h1 align=center>Результат</h1>
@@ -109,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-light p-5 rounded">
+        <div class="content">
             <div style="text-align: center;">
                 <div style="display: inline-block; text-align: left;">
                     <h1 align=center>Результати інших учасників</h1>
@@ -134,6 +133,5 @@
                 </div>
             </div>
         </div>
-    </div>
     </body>
 </html>
