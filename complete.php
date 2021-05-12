@@ -93,6 +93,7 @@
 <html>
     <head>
     <title>Результат</title>
+    <link href="src/styles/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="content">
