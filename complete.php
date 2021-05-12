@@ -97,11 +97,11 @@
 <body>
 <div align=center class="content">
   <h1>Результат</h1>
-  <p><b>Ім'я: </b> <?php echo($firstname); ?></p>
-  <p><b>Прізвище: </b> <?php echo($lastname); ?></p>
-  <p><b>Ви відповіли правильно на </b> <?php echo($countright); ?> <b> з </b> <?php echo($countall); ?> <b> питань.</b></p>
-  <p><b>Відсоток правильних відповідей: </b> <?php echo($percentage); ?><b>%.</b></p>
-  <p><b>Ваша оцінка: </b> <?php echo($mark); ?><b>.</b></p>
+  <p align=left><b>Ім'я: </b> <?php echo($firstname); ?></p>
+  <p align=left><b>Прізвище: </b> <?php echo($lastname); ?></p>
+  <p align=left><b>Ви відповіли правильно на </b> <?php echo($countright); ?> <b> з </b> <?php echo($countall); ?> <b> питань.</b></p>
+  <p align=left><b>Відсоток правильних відповідей: </b> <?php echo($percentage); ?><b>%.</b></p>
+  <p align=left><b>Ваша оцінка: </b> <?php echo($mark); ?><b>.</b></p>
 </div>
 <div align=center class="content">
   <h1>Результати інших учасників</h1>
