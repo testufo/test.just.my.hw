@@ -96,6 +96,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     </head>
     <body>
+    <div class="container">
         <div class="bg-light p-5 rounded">
             <div style="text-align: center;">
                 <div style="display: inline-block; text-align: left;">
@@ -133,5 +134,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </body>
 </html>
