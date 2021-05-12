@@ -6,6 +6,10 @@
                     ('$password', '$firstname', '$lastname', '$emai', '$jsonanswer', '$mark', '$groop') ON CONFLICT RETURN false RETURNING id";
             $id = pg_query($query);
         pg_close($dbconn);
+        if($id==false){
+            return false;
+            throw new Exception();
+        }
         return pg_fetch_row($id)[0];
     }
 
