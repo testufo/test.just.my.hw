@@ -37,7 +37,7 @@
         }
         $mark = round(($c/count($goodanswers))*12);
         $pass = randomPassword();
-        $id = insert($pass, $usermail, $get["firstname"], $get["lastname"], $jsonanswers, $mark);
+        $id = insert($pass, $usermail, $get["firstname"], $get["lastname"], $jsonanswers, $mark, $get["groop"]);
         if($id == false){
             echo('<html>
             <head>
