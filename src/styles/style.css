@@ -41,11 +41,6 @@ p {
     border: 2px solid #97dd9a
 }
 
-.button:hover {
-    text-shadow: 0 0 5px #6eff81,0 0 10px #6eff81,0 0 20px #6eff81;
-    box-shadow: 0 0 5px #6eff81,0 0 10px #6eff81,0 0 20px #6eff81
-}
-
 .button:active {
     background-color: #45d368;
     color: #000;
