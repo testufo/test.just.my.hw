@@ -9,7 +9,7 @@
             $id = pg_query($query);
         }
         else{
-            id=false;
+            $id=false;
         }
         pg_close($dbconn);
         return $id;
