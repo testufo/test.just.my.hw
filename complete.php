@@ -93,7 +93,7 @@
 <html>
     <head>
     <title>Результат</title>
-    <link href="src/styles/style.css" rel="stylesheet" type="text/css">
+    <link href="/src/styles/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="content">
@@ -108,7 +108,6 @@
                 </div>
             </div>
         </div>
-
         <div class="content">
             <div style="text-align: center;">
                 <div style="display: inline-block; text-align: left;">
