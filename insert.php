@@ -10,6 +10,8 @@
         }
         else{
             $id=false;
+            pg_close($dbconn);
+            return $id;
         }
         pg_close($dbconn);
         return pg_fetch_row($id)[0];
