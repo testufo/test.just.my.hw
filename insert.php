@@ -1,21 +1,12 @@
 <?php
     function insert($password, $emai, $firstname, $lastname, $jsonanswer, $mark, $groop){
         $dbconn = pg_connect("host=ec2-54-216-185-51.eu-west-1.compute.amazonaws.com dbname=d7qvjv66dimcfg user=nbvnsbswyvclsh password=f47f163b6ecbddaf0f3835b045eb07b1d609c6200269be2bf2716b76ead2b130");
-        $query = "SELECT EXISTS (SELECT * FROM htmltestform WHERE email='$emai')";
-        $result = pg_query($query);
-        $exist = boolval(pg_fetch_row($result)[0]);
-        if(!$exist){
+
             $query = "INSERT INTO htmltestform(pass, firstname, lastname, email, jsonanswer, mark, groop) VALUES
-                    ('$password', '$firstname', '$lastname', '$emai', '$jsonanswer', '$mark', '$groop') RETURNING id";
+                    ('$password', '$firstname', '$lastname', '$emai', '$jsonanswer', '$mark', '$groop') RETURNING id ON CONFLICT RETURN false";
             $id = pg_query($query);
-            pg_close($dbconn);
-            return pg_fetch_row($id)[0];
-        }
-        else{
-            $id=false;
-            pg_close($dbconn);
-            return $id;
-        }
+        pg_close($dbconn);
+        return pg_fetch_row($id)[0];
     }
 
     function getdetails($id, $password){
