@@ -2,7 +2,7 @@ body{
     background-color: #cccccc;
 }
 .content,img {
-    border-style: solid;
+    border-style: inset;
     border-radius: 5px;
     border-width: 3px
 }
