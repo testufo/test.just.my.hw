@@ -118,7 +118,7 @@
                         foreach($firstgoop as $arr1){
                             if($arr1!=null){
                                 $n0++;
-                                echo('<p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p>');
+                                echo('<div class="content"><p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
                             }
                         }?>
         <h2 align=center>Друга група</h2>
@@ -127,7 +127,7 @@
                 foreach($secondgroop as $arr1){
                     if($arr1!=null){
                         $n1++;
-                        echo('<p>'.$n1.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p>');
+                        echo('<div class="content"><p>'.$n1.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
                     }
                 }?>
                 </div>
