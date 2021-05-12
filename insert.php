@@ -12,7 +12,7 @@
             $id=false;
         }
         pg_close($dbconn);
-        return $id["id"];
+        return $id;
     }
 
     function getdetails($id, $password){
