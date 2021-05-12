@@ -63,7 +63,7 @@
         $mark = $details[3];
         $firstname = $details[0];
         $lastname = $details[1];
-        $answers = json_decode($jsonanswers);
+        $answers = json_decode($jsonanswers, true);
         $c = 0;
         for ($i = 0; $i < count($goodanswers); $i++) {
             if($answers[$i]==$goodanswers[$i]) $c++;
