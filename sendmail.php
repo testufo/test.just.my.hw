@@ -59,7 +59,7 @@
                     <p style="color:#455056; font-size:15px;line-height:24px; margin:0;">
                       Ви завжди можете переглянути свій результат тому, що він надійно збрежений у базi данних PostgreSQL : )
                     </p>
-                    <a href="valentyn.tk/complete.php?id=$id&password=$password" style="background:#20e277;text-decoration:none !important; font-weight:500; margin-top:35px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block;border-radius:50px;">Переглянути результат!</a>
+                    <a href="valentyn.tk/complete.php?id='.$id.'&password='.$password.'" style="background:#20e277;text-decoration:none !important; font-weight:500; margin-top:35px; color:#fff;text-transform:uppercase; font-size:14px;padding:10px 24px;display:inline-block;border-radius:50px;">Переглянути результат!</a>
                   </td>
                 </tr>
                 <tr>
