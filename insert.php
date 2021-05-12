@@ -7,14 +7,14 @@
             $query = "INSERT INTO htmltestform(pass, firstname, lastname, email, jsonanswer, mark, groop) VALUES
                     ('$password', '$firstname', '$lastname', '$emai', '$jsonanswer', '$mark', '$groop') RETURNING id";
             $id = pg_query($query);
+            pg_close($dbconn);
+            return pg_fetch_row($id)[0];
         }
         else{
             $id=false;
             pg_close($dbconn);
             return $id;
         }
-        pg_close($dbconn);
-        return pg_fetch_row($id)[0];
     }
 
     function getdetails($id, $password){
