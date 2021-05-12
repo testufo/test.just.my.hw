@@ -91,34 +91,41 @@
     $secondgroop = getothers(2);
 ?>
 <html>
-<head>
-<title>Результат</title>
-</head>
-<body>
-<div align=center class="content">
-  <h1>Результат</h1>
-  <p align=left><b>Ім'я: </b> <?php echo($firstname); ?></p>
-  <p align=left><b>Прізвище: </b> <?php echo($lastname); ?></p>
-  <p align=left><b>Ви відповіли правильно на </b> <?php echo($countright); ?> <b> з </b> <?php echo($countall); ?> <b> питань.</b></p>
-  <p align=left><b>Відсоток правильних відповідей: </b> <?php echo($percentage); ?><b>%.</b></p>
-  <p align=left><b>Ваша оцінка: </b> <?php echo($mark); ?><b>.</b></p>
-</div>
-<div align=center class="content">
-  <h1>Результати інших учасників</h1>
-  <h2>Перша группа</h2>
-  <?php foreach($firstgoop as $arr1){
-            if($arr1!=null){
-                echo('<p>'.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p>');
-            }
-        }
-    ?>
-  <h2>Друга группа</h2>
-  <?php foreach($secondgroop as $arr1){
-            if($arr1!=null){
-                echo('<p>'.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p>');
-            }
-        }
-    ?>
-</div>
-</body>
+    <head>
+    <title>Результат</title>
+    </head>
+    <body>
+        <div class="content">
+            <div style="text-align: center;">
+                <div style="display: inline-block; text-align: left;">
+                <h1 align=center>Результат</h1>
+                <p><b>Ім'я: </b> <?php echo($firstname); ?></p>
+                <p><b>Прізвище: </b> <?php echo($lastname); ?></p>
+                <p><b>Ви відповіли правильно на </b> <?php echo($countright); ?> <b> з </b> <?php echo($countall); ?> <b> питань.</b></p>
+                <p><b>Відсоток правильних відповідей: </b> <?php echo($percentage); ?><b>%.</b></p>
+                <p><b>Ваша оцінка: </b> <?php echo($mark); ?><b>.</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div style="text-align: center;">
+                <div style="display: inline-block; text-align: left;">
+                    <h1 align=center>Результати інших учасників</h1>
+                    <h2 align=center>Перша группа</h2>
+                    <?php foreach($firstgoop as $arr1){
+                            if($arr1!=null){
+                                echo('<p>'.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p>');
+                            }
+                        }?>
+        <h2 align=center>Друга группа</h2>
+        <?php foreach($secondgroop as $arr1){
+                    if($arr1!=null){
+                        echo('<p>'.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p>');
+                    }
+                }?>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
