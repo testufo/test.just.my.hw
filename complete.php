@@ -2,7 +2,7 @@
     include 'insert.php';
     include 'sendmail.php';
 
-    $goodanswers=array();
+    $goodanswers=array("a","b","c","d");
     if(empty($_GET)){
         echo('<html>
         <head>
