@@ -59,10 +59,10 @@
         $get["password"] = filter_var($_GET['password'], FILTER_SANITIZE_STRING);
         $get["id"] = filter_var($_GET['id'], FILTER_SANITIZE_NUMBER_INT);
         $details = getdetails($get["id"], $get["password"]);
-        $jsonanswers = $details["jsonanswer"];
-        $mark = $details["mark"];
-        $firstname = $details["firstname"];
-        $lastname = $details["lastname"];
+        $jsonanswers = $details[2];
+        $mark = $details[3];
+        $firstname = $details[0];
+        $lastname = $details[1];
         $answers = json_decode($jsonanswers);
         $c = 0;
         for ($i = 0; $i < count($goodanswers); $i++) {
