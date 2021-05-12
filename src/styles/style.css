@@ -37,6 +37,7 @@ p {
     text-align: center;
     display: inline-block;
     font-size: 16px;
+    border-radius: 3px;
     border: 2px solid #3cb45a
 }
 
