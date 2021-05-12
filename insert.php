@@ -21,7 +21,7 @@
         $query = "SELECT firstname, lastname, jsonanswer, mark FROM htmltestform WHERE id=$id AND pass='$password'";
         $result = pg_query($query);
         while ($line = pg_fetch_array($result , null, PGSQL_ASSOC)) {
-            array_push($others, $line);
+            array_push($details, $line);
         }
         pg_close($dbconn);
         return $details;
