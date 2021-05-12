@@ -1,11 +1,13 @@
-
+body{
+    background-color: #f5f5f5;
+}
 .content,img {
     border-style: double;
     border-radius: 5px;
     border-width: 3px
 }
 header {
-    background: rgba(0,0,0,.7);
+    background: rgba(255, 255, 255, 0.7);
     padding: 1rem;
     position: fixed;
     width: 4%;
