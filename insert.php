@@ -17,7 +17,7 @@
 
     function getdetails($id, $password){
         $dbconn = pg_connect("host=ec2-54-216-185-51.eu-west-1.compute.amazonaws.com dbname=d7qvjv66dimcfg user=nbvnsbswyvclsh password=f47f163b6ecbddaf0f3835b045eb07b1d609c6200269be2bf2716b76ead2b130");   
-        $query = "SELECT firstname, lastname, jsonanswer, mark FROM htmltestform WHERE id=$id AND pass=$password";
+        $query = "SELECT firstname, lastname, jsonanswer, mark FROM htmltestform WHERE id=$id AND pass='$password'";
         $details = pg_query($query);
         pg_close($dbconn);
         return $details;
