@@ -112,13 +112,13 @@
             <div style="text-align: center;">
                 <div style="display: inline-block; text-align: left;">
                     <h1 align=center>Результати інших учасників</h1>
-                    <h2 align=center>Перша группа</h2>
+                    <h2 align=center>Перша група</h2>
                     <?php foreach($firstgoop as $arr1){
                             if($arr1!=null){
                                 echo('<p>'.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p>');
                             }
                         }?>
-        <h2 align=center>Друга группа</h2>
+        <h2 align=center>Друга група</h2>
         <?php foreach($secondgroop as $arr1){
                     if($arr1!=null){
                         echo('<p>'.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p>');
