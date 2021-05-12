@@ -28,17 +28,16 @@ h2,h1 {
 }
 
 p {
-    color: #45d368
+    color: #3cb45a
 }
 
 .button {
-    background-color: #4caf4f00;
-    color: #c5ffae;
+    background-color: #ffffff00;
+    color: #3cb45a;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border: 2px solid #97dd9a
+    border: 2px solid #3cb45a
 }
 
 .button:active {
