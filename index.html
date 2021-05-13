@@ -183,7 +183,7 @@
 
                         display.textContent = minutes + ":" + seconds;
 
-                        if (--timer < 0) {
+                        if (--timer < -1) {
                             timeOut();
                         }
                     }, 1000);
