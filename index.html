@@ -10,14 +10,14 @@
         </header>
          <link rel="stylesheet" href="src/styles/style.css">
         <div class="content">
-            <h2 align=center><b>Тест по інформатиці з теми: </b> Мова гіпертекстової розмітки HTML.</h2>
+            <h2 align=center><b>Тест з теми: </b> Мова гіпертекстової розмітки HTML.</h2>
             <form  id="math-form" action="result.php" >
                 <p><b>Ім'я</b></p>
-                <input type="text" name="firstname" required pattern="[А-Я]{1}[а-я]{2,20}"> 
+                <input type="text" id="fn" name="firstname" required pattern="[А-Я]{1}[а-я]{2,20}"> 
                 <p><b>Прізвище</b></p>
-                <input type="text" name="lastname" required pattern="[А-Я]{1}[а-я]{2,20}">
+                <input type="text" id="ln" name="lastname" required pattern="[А-Я]{1}[а-я]{2,20}">
                 <p><b>Електронна адреса</b></p>
-                <input type="email" name="email" required placeholder="example@domen.com">
+                <input type="text" id="mail" name="email" required placeholder="example@domen.com">
                 <br>
                <center><button onclick="startTest()" class="button">Розпочати тест</button></center> 
         </div>
@@ -149,7 +149,34 @@
                 }
             }
             function valid(){
-
+                var email = document.getElementById("mail");
+                var fn = document.getElementById("fn");
+                var ln = document.getElementById("ln");
+                var b=true;
+                email.addEventListener("input", function (event) {
+                if (email.validity.typeMismatch) {
+                    email.setCustomValidity("Некоректне значення!");
+                    b=false;
+                } else {
+                    email.setCustomValidity("");
+                }
+                });
+                fn.addEventListener("input", function (event) {
+                if (email.validity.typeMismatch) {
+                    email.setCustomValidity("Ім'я має починатися з великої літери та мати більше 2-х символів!");
+                    b=false;
+                } else {
+                    email.setCustomValidity("");
+                }
+                });
+                ln.addEventListener("input", function (event) {
+                if (email.validity.typeMismatch) {
+                    email.setCustomValidity("Прізвище має починатися з великої літери та мати більше 2-х символів!");
+                    b=false;
+                } else {
+                    email.setCustomValidity("");
+                }
+                });
             }
             function startTimer(duration, display) {
                     var timer = duration, minutes, seconds;
