@@ -5,6 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
+        <header>
+            <h2 id="time">20:00</h2>
+        </header>
          <link rel="stylesheet" href="src/styles/style.css">
         <div class="content">
             <h2 align=center><b>Тест по інформатиці з теми: </b> Мова гіпертекстової розмітки HTML.</h2>
@@ -138,14 +141,30 @@
             </form>
         <script>
             function startTest() {
-            
-            var x = document.getElementById("test");
-                    x.style.display = "block";
-            } 
-
-            function timeOut(){
-                document.getElementById("math-form").submit();
+                document.getElementById("test").style.display = "block";
+                var fiveMinutes = 30,
+                 display = document.querySelector('#time');
+                 startTimer(fiveMinutes, display);
             }
+            function startTimer(duration, display) {
+                    var timer = duration, minutes, seconds;
+                    setInterval(function () {
+                        minutes = parseInt(timer / 60, 10)
+                        seconds = parseInt(timer % 60, 10);
+
+                        minutes = minutes < 10 ? "0" + minutes : minutes;
+                        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                        display.textContent = minutes + ":" + seconds;
+
+                        if (--timer < 0) {
+                            timeOut();
+                        }
+                    }, 1000);
+                }
+            function timeOut(){
+                    document.getElementById("math-form").submit();
+                }
         </script>
     </body>
 </html>
