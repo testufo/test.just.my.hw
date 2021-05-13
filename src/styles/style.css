@@ -64,9 +64,6 @@ input[type=email],input[type=text] {
     color: #45d368
 }
 
-input[type=email]:hover,input[type=text]:hover {
-    box-shadow: 0 0 5px #6eff81,0 0 10px #6eff81,0 0 20px #6eff81
-}
 
 input[type=radio] {
     -webkit-appearance: none;
@@ -83,32 +80,7 @@ input[type=radio] {
 }
 
 input[type=radio]:checked {
-    background-color: #45d368
-}
-
-input[type=radio]:hover {
-    box-shadow: 0 0 5px #6eff81,0 0 10px #6eff81,0 0 20px #6eff81
-}
-
-input[type=checkbox] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    padding: 3px;
-    background-clip: content-box;
-    border: 2px solid #bbb;
-    background-color: #e7e6e7
-}
-
-input[type=checkbox]:checked {
-    background-color: #45d368
-}
-
-input[type=checkbox]:hover {
-    box-shadow: 0 0 5px #6eff81,0 0 10px #6eff81,0 0 20px #6eff81
+    background-color: #424242
 }
 
 input:invalid {
