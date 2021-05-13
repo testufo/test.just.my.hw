@@ -10,9 +10,6 @@ header {
     background: rgba(255, 255, 255, 0.7);
     padding: 1rem;
     position: fixed;
-    width: 4%;
-    min-width: 100px;
-    z-index: 2;
     border-radius: 15px;
     display: grid
 }
