@@ -16,7 +16,7 @@
                 <p><b>Електронна адреса</b></p>
                 <input type="email" name="email" required placeholder="example@domen.com">
                 <br>
-                <button  onclick="startTest()" class="button" align=center>Розпочати тест</button>
+               <center><button onclick="startTest()" class="button">Розпочати тест</button></center> 
         </div>
         <div class="content" id="test" style="display: none;">
             <div class="content" style="border-width: 1px">
@@ -41,8 +41,9 @@
                 <input type="radio" name="answer7[]" value="4">a<sup>3</sup>+b<sup>3</sup></p>
             </div>  
                 <p><input id="submit-form"  class="button" type="submit" value="Перевірити"></p>
-                </form>
+                
         </div>
+            </form>
         <script>
             function startTest() {
             var x = document.getElementById("test");
