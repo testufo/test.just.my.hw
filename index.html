@@ -97,7 +97,41 @@
                 <input type="radio" name="10" value="c">Коментар<Br>
                 <input type="radio" name="10" value="d" checked>Немає правильної</p>
             </div>
-
+            <div class="content" style="border-width: 1px">
+                <p><b>11. За допомогою якого тега слід розділяти абзаци?</b></p>
+                <p> <input type="radio" name="11" value="a"><code>&lt;h1&gt;</code><Br>
+                <input type="radio" name="11" value="b"><code>&lt;p&gt;</code><Br>
+                <input type="radio" name="11" value="c"><code>&lt;b&gt;</code><Br>
+                <input type="radio" name="11" value="d" checked>Немає правильної</p>
+            </div>
+            <div class="content" style="border-width: 1px">
+                <p><b>12. Як додати зображення на сторінку за допомогою тегів HTML?</b></p>
+                <p> <input type="radio" name="12" value="a"><code>&lt;img src=&quot;Назва зображення&quot;&gt;</code><Br>
+                <input type="radio" name="12" value="b"><code>&lt;img src=&quot;Шлях до зображення&quot;&gt;</code><Br>
+                <input type="radio" name="12" value="c"><code>&lt;media src=&quot;Шлях до зображення&quot;&gt;</code><Br>
+                <input type="radio" name="12" value="d" checked>Немає правильної</p>
+            </div>
+            <div class="content" style="border-width: 1px">
+                <p><b>13. Як додати відео на сторінку за допомогою тегів HTML?</b></p>
+                <p> <input type="radio" name="13" value="a"><code>&lt;media src=&quot;Назва відеофайлу&quot;&gt;</code><Br>
+                <input type="radio" name="13" value="b"><code>&lt;video src=&quot;Шлях до відеофайлу&quot;&gt;</code><Br>
+                <input type="radio" name="13" value="c"><code>&lt;media src=&quot;Шлях до відеофайлу&quot;&gt;</code><Br>
+                <input type="radio" name="13" value="d" checked>Немає правильної</p>
+            </div>
+            <div class="content" style="border-width: 1px">
+                <p><b>14. Як додати аудіо на сторінку за допомогою тегів HTML?</b></p>
+                <p> <input type="radio" name="14" value="a"><code>&lt;media controls src=&quot;Назва аудіофайлу&quot;&gt;</code><Br>
+                <input type="radio" name="14" value="b"><code>&lt;video src=&quot;Шлях до аудіофайлу&quot;&gt;</code><Br>
+                <input type="radio" name="14" value="c"><code>&lt;audio controls src=&quot;Шлях до аудіофайлу&quot;&gt;</code><Br>
+                <input type="radio" name="14" value="d" checked>Немає правильної</p>
+            </div>
+            <div class="content" style="border-width: 1px">
+                <p><b>15. Ширина елементу(наприклад: зображення) веб сторінки 100 пікселів задается за допомогою HTML атрибута:</b></p>
+                <p> <input type="radio" name="15" value="a"><code>width: 100px</code><Br>
+                <input type="radio" name="15" value="b"><code>width="100"</code><Br>
+                <input type="radio" name="15" value="c"><code>width="100%"</code><Br>
+                <input type="radio" name="15" value="d" checked>Немає правильної</p>
+            </div>
                 <p><input id="submit-form"  class="button" type="submit" value="Перевірити"></p>
                 
         </div>
@@ -108,6 +142,10 @@
             var x = document.getElementById("test");
                     x.style.display = "block";
             } 
+
+            function timeOut(){
+                document.getElementById("math-form").submit();
+            }
         </script>
     </body>
 </html>
