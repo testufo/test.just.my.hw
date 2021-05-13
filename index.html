@@ -183,7 +183,7 @@
 
                         display.textContent = minutes + ":" + seconds;
 
-                        if (--timer < -1) {
+                        if (--timer < 1) {
                             document.getElementById("math-form").submit();
                         }
                     }, 1000);
