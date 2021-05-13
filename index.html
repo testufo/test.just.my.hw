@@ -12,12 +12,24 @@
         <div class="content">
             <h2 align=center><b>Тест з теми: </b> Мова гіпертекстової розмітки HTML.</h2>
             <form  id="math-form" action="result.php" >
+              <div style="display: inline-block;"> 
                 <p><b>Ім'я</b></p>
                 <input type="text" id="fn" name="firstname" required pattern="[А-Я]{1}[а-я]{2,20}"> 
                 <p><b>Прізвище</b></p>
                 <input type="text" id="ln" name="lastname" required pattern="[А-Я]{1}[а-я]{2,20}">
                 <p><b>Електронна адреса</b></p>
                 <input type="text" id="mail" name="email" required pattern="[a-z0-9._%+-]+$">
+                <p><b>Група</b></p>
+                <select name="groop">
+                    <option value="Перша">1</option>
+                    <option value="Друга">2</option>
+                  </select>
+                </div> 
+                <div style="display: inline-block;"> 
+                    <p align=center><b>Іформація</b></p>
+                    <p>1. Кількіть питань 15.</p>
+                    <p>2. Час на проходження 20хв.</p>
+                </div>
                 <br>
                <center><button onclick="startTest()" class="button">Розпочати тест</button></center> 
         </div>
