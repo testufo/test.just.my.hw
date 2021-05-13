@@ -7,7 +7,7 @@
     <body>
          <link rel="stylesheet" href="src/styles/style.css">
         <div class="content">
-            <h2 align=center>Тест з математики</h2>
+            <h2 align=center><b>Тест по інформатиці з теми: </b> Мова гіпертекстової розмітки HTML.</h2>
             <form  id="math-form" action="result.php" >
                 <p><b>Ім'я</b></p>
                 <input type="text" name="firstname" required pattern="[А-Я]{1}[а-я]{2,20}"> 
@@ -20,22 +20,23 @@
         </div>
         <div class="content" id="test" style="display: none;">
             <div class="content" style="border-width: 1px">
-                <p><b>Розв'яжіть рівняння x<sup>2</sup>+5x-14=0</b></p>
-                <p> <input type="radio" name="answer[]" value="1" required>7;2<Br>
-                <input type="radio" name="answer[]" value="2">-7;-2<Br>
-                <input type="radio" name="answer[]" value="3">7;-2<Br>
-                <input type="radio" name="answer[]" value="4">-7;2</p>
+                <h2 align=center>Тести</h2>
+                <p><b>Для чого призначений цей елемент: </b><code>&lt;a href=&quot;google.com&quot;&gt;Повернутися на головну сторінку сайту&lt;/a&gt;</code><b>?</b></p>
+                <p> <input type="radio" name="1" value="a">Задає заголовок головної сторінки сайту.<Br>
+                <input type="radio" name="1" value="b">Гіперпосилання що веде на головну сторінку сайту.<Br>
+                <input type="radio" name="1" value="c">Гіперпосилання що веде на сторінку Google.<Br>
+                <input type="radio" name="1" value="d" checked>Немає правильної</p>
             </div>
             <div class="content" style="border-width: 1px">
                 <p><b>Знайдіть похідну фунцкції y=5sinx-7x<sup>2</sup>+7</b></p>
-                <p><input type="radio" name="answer6[]" value="1" required>5sinx-14x<Br>
+                <p><input type="radio" name="answer6[]" value="1">5sinx-14x<Br>
                 <input type="radio" name="answer6[]" value="2" >5cosx-7x<Br>
                 <input type="radio" name="answer6[]" value="3">5cosx-14x<Br>
                 <input type="radio" name="answer6[]" value="4">5cosx-14</p>
             </div>   
             <div class="content" style="border-width: 1px"> 
                 <p><b>(a-b)(a<sup>2</sup>+ab+b<sup>2</sup>)=</b></p>
-                <p><input type="radio" name="answer7[]" value="1" required>a<sup>3</sup>-b<sup>3</sup><Br>
+                <p><input type="radio" name="answer7[]" value="1">a<sup>3</sup>-b<sup>3</sup><Br>
                 <input type="radio" name="answer7[]" value="2" >a<sup>2</sup>-b<sup>2</sup><Br>
                 <input type="radio" name="answer7[]" value="3">a-b<Br>
                 <input type="radio" name="answer7[]" value="4">a<sup>3</sup>+b<sup>3</sup></p>
@@ -46,6 +47,7 @@
             </form>
         <script>
             function startTest() {
+            
             var x = document.getElementById("test");
                     x.style.display = "block";
             } 

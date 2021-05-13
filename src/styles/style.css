@@ -30,7 +30,13 @@ h2,h1 {
 p {
     color: #5c5c5c
 }
-
+code {
+    font-family: Consolas,"courier new";
+    color: crimson;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+  }
 .button {
     background-color: #ffffff00;
     color: #3cb45a;
