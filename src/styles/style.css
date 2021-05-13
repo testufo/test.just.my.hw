@@ -36,6 +36,7 @@ code {
     background-color: #bebebe;
     padding: 2px;
     font-size: 105%;
+    border-radius: 3px;
   }
 .button {
     background-color: #ffffff00;
