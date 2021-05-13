@@ -95,8 +95,8 @@
             <div class="content" style="border-width: 1px"> 
                 <p><b>8. Між якими тегами розміщений видимий вміст сторінки?</b></p>
                 <p><input type="radio" name="8" value="a"><code>&lt;html&gt;&lt;/html&gt;</code><Br>
-                <input type="radio" name="8" value="b">&lt;head&gt;&lt;/head&gt;</code><Br>
-                <input type="radio" name="8" value="c">&lt;body&gt;&lt;/body&gt;</code><Br>
+                <input type="radio" name="8" value="b"><code>&lt;head&gt;&lt;/head&gt;</code><Br>
+                <input type="radio" name="8" value="c"><code>&lt;body&gt;&lt;/body&gt;</code><Br>
                 <input type="radio" name="8" value="d" checked>Немає правильної</p>
             </div> 
             <div class="content" style="border-width: 1px">
@@ -165,7 +165,7 @@
                 var email = document.getElementById("mail");
                 var fn = document.getElementById("fn");
                 var ln = document.getElementById("ln");
-                var gr = document.getElementById("ln");
+                var gr = document.getElementById("gr");
                 var b=true;
                 if(!fn.validity.valid || !ln.validity.valid || !email.validity.valid || !gr.validity.valid){
                     b=false;
