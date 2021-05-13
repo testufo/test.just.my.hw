@@ -14,7 +14,7 @@
             <form  id="math-form" action="complete.php">
               <div style="display: inline-block; vertical-align:top;"> 
                 <p><b>Ім'я</b></p>
-                <input type="text" id="fn" name="firstname" onchange="eva()" required pattern="[А-Я]{1}[а-я]{2,20}"> 
+                <input type="text" id="fn" name="firstname" onchange="evafnction()" required pattern="[А-Я]{1}[а-я]{2,20}"> 
                 <p><b>Прізвище</b></p>
                 <input type="text" id="ln" name="lastname" required pattern="[А-Я]{1}[а-я]{2,20}">
                 <p><b>Корпоративна електронна адресса (БЕЗ @ch-school33.ukr.education)</b></p>
@@ -175,7 +175,7 @@
                 }
                 return b;
             }
-            function eva(){
+            function evafnction(){
                 if(getElementById("fn")=="Єва"||getElementById("fn")=="Ева")
                 document.getElementById("eva").style.display = "block";
             }
