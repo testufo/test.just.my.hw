@@ -14,7 +14,7 @@
             <form  id="math-form" action="complete.php">
               <div style="display: inline-block; vertical-align:top;"> 
                 <p><b>Ім'я</b></p>
-                <input type="text" id="fn" name="firstname" required pattern="[А-Я]{1}[а-я]{2,20}"> 
+                <input type="text" id="fn" name="firstname" onchange="eva()" required pattern="[А-Я]{1}[а-я]{2,20}"> 
                 <p><b>Прізвище</b></p>
                 <input type="text" id="ln" name="lastname" required pattern="[А-Я]{1}[а-я]{2,20}">
                 <p><b>Корпоративна електронна адресса (БЕЗ @ch-school33.ukr.education)</b></p>
@@ -30,6 +30,9 @@
                     <p align=center><b>Інформація</b></p>
                     <p>1. Кількіть питань 15.</p>
                     <p>2. Час на проходження 20хв.</p>
+                </div>
+                <div style="display: inline-block; vertical-align:top;"> 
+                    <img src="/jab.webp" id="eva" style="display: none;">
                 </div>
                 <br>
                <center><button type="button" onclick="startTest()" class="button">Розпочати тест</button></center> 
@@ -171,6 +174,9 @@
                     b=false;
                 }
                 return b;
+            }
+            function eva(){
+                document.getElementById("eva").style.display = "block";
             }
             function startTimer(duration, display) {
                     var timer = duration, minutes, seconds;
