@@ -15,7 +15,8 @@
                 <input type="text" name="lastname" required pattern="[А-Я]{1}[а-я]{2,20}">
                 <p><b>Електронна адреса</b></p>
                 <input type="email" name="email" required placeholder="example@domen.com">
-                <button onclick="startTest()" class="button">Розпочати тест</button>
+                <br>
+                <button align=center onclick="startTest()" class="button">Розпочати тест</button>
         </div>
         <div class="content" id="test" style="display: none;">
             <div class="content" style="border-width: 1px">
@@ -45,11 +46,7 @@
         <script>
             function startTest() {
             var x = document.getElementById("test");
-                if (x.style.display === "none") {
                     x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
             } 
         </script>
     </body>

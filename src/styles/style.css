@@ -38,7 +38,8 @@ p {
     display: inline-block;
     font-size: 16px;
     border-radius: 3px;
-    border: 2px solid #3cb45a
+    border: 2px solid #3cb45a;
+    padding: 8px;
 }
 
 .button:active {
