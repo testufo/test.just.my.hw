@@ -2,7 +2,7 @@
     function insert($password, $emai, $firstname, $lastname, $jsonanswer, $mark, $groop, $class){
         $dbconn = pg_connect("host=ec2-54-216-185-51.eu-west-1.compute.amazonaws.com dbname=d7qvjv66dimcfg user=nbvnsbswyvclsh password=f47f163b6ecbddaf0f3835b045eb07b1d609c6200269be2bf2716b76ead2b130");
 
-            $query = "INSERT INTO htmltestform(pass, firstname, lastname, email, jsonanswer, mark, groop, class) VALUES
+            $query = "INSERT INTO htmltestform(pass, firstname, lastname, email, jsonanswer, mark, groop, classname) VALUES
                     ('$password', '$firstname', '$lastname', '$emai', '$jsonanswer', '$mark', '$groop', '$class') RETURNING id";
             $id = pg_query($query);
         pg_close($dbconn);
@@ -24,7 +24,7 @@
     function getothers($groop, $class){
         $others = array();
         $dbconn = pg_connect("host=ec2-54-216-185-51.eu-west-1.compute.amazonaws.com dbname=d7qvjv66dimcfg user=nbvnsbswyvclsh password=f47f163b6ecbddaf0f3835b045eb07b1d609c6200269be2bf2716b76ead2b130");   
-        $query = "SELECT firstname, lastname, mark FROM htmltestform WHERE class='$class' AND groop=$groop ORDER BY lastname";
+        $query = "SELECT firstname, lastname, mark FROM htmltestform WHERE classname='$class' AND groop=$groop ORDER BY lastname";
         $result = pg_query($query);
         while ($line = pg_fetch_array($result , null, PGSQL_ASSOC)) {
             array_push($others, $line);
