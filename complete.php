@@ -114,7 +114,7 @@
         <div class="content">
             <div style="text-align: center;">
                 <div style="display: inline-block; text-align: left;">
-                    <h1 align=center>Результати інших учасників класс 10-Б</h1>
+                    <h1 align=center>Результати інших учасників клас 10-Б</h1>
                     <h2 align=center>Перша група</h2>
                     <?php 
                         $n0 = 0;
@@ -139,7 +139,7 @@
         <div class="content">
             <div style="text-align: center;">
                 <div style="display: inline-block; text-align: left;">
-                    <h1 align=center>Результати інших учасників класс 10-А</h1>
+                    <h1 align=center>Результати інших учасників клас 10-А</h1>
                     <h2 align=center>Перша група</h2>
                     <?php 
                         $n0 = 0;
