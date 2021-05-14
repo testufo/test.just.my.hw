@@ -88,8 +88,10 @@
         </html>');
         die();
     }
-    $firstgoop = getothers(1);
-    $secondgroop = getothers(2);
+    $firstgoopb = getothers(1,"b");
+    $secondgroopb = getothers(2,"b");
+    $firstgoopa = getothers(1,"a");
+    $secondgroopa = getothers(2,"a");
 ?>
 <html>
     <head>
@@ -112,11 +114,11 @@
         <div class="content">
             <div style="text-align: center;">
                 <div style="display: inline-block; text-align: left;">
-                    <h1 align=center>Результати інших учасників</h1>
+                    <h1 align=center>Результати інших учасників класс 10-Б</h1>
                     <h2 align=center>Перша група</h2>
                     <?php 
                         $n0 = 0;
-                        foreach($firstgoop as $arr1){
+                        foreach($firstgoopb as $arr1){
                             if($arr1!=null){
                                 $n0++;
                                 echo('<div class="content" style="border-width: 1px"><p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
@@ -125,7 +127,32 @@
         <h2 align=center>Друга група</h2>
         <?php 
                 $n1=0;
-                foreach($secondgroop as $arr1){
+                foreach($secondgroopb as $arr1){
+                    if($arr1!=null){
+                        $n1++;
+                        echo('<div class="content" style="border-width: 1px"><p>'.$n1.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
+                    }
+                }?>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div style="text-align: center;">
+                <div style="display: inline-block; text-align: left;">
+                    <h1 align=center>Результати інших учасників класс 10-А</h1>
+                    <h2 align=center>Перша група</h2>
+                    <?php 
+                        $n0 = 0;
+                        foreach($firstgoopa as $arr1){
+                            if($arr1!=null){
+                                $n0++;
+                                echo('<div class="content" style="border-width: 1px"><p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
+                            }
+                        }?>
+        <h2 align=center>Друга група</h2>
+        <?php 
+                $n1=0;
+                foreach($secondgroopa as $arr1){
                     if($arr1!=null){
                         $n1++;
                         echo('<div class="content" style="border-width: 1px"><p>'.$n1.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
