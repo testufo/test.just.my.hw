@@ -1,0 +1,32 @@
+body{
+    background-color: #C3A78F;
+}
+div{
+    border-radius: 15px;
+    border-style: ridge;
+    margin: 3%;
+    padding: 30px;
+}
+video,img,audio{
+    border-style: inset;
+    border-radius: 15px;
+    margin: 10px;
+}
+h2{
+    color: hsla(0, 0%, 100%, 0.603);
+}
+span{
+    animation-duration: 6s;
+    animation-name: bbb;
+    color: rgba(255, 255, 255, 0.637);
+    animation-iteration-count: infinite;
+}
+  @keyframes bbb {
+    from {
+      margin-left: 0%;
+    }
+  
+    to {
+      margin-left:80%;
+    }
+  }
