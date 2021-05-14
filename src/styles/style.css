@@ -22,7 +22,8 @@ header {
 }
 
 h2,h1 {
-    white-space: nowrap
+    white-space: nowrap;
+    color: rgb(34, 34, 34);
 }
 
 p {
