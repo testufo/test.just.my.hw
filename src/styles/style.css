@@ -9,8 +9,9 @@ body{
 header {
     background: rgba(255, 255, 255, 0.7);
     position: fixed;
-    border-radius: 15px;
-    padding: 5px 10px
+    border-radius: 5px;
+    border-style: outset;
+    padding: 30px;
 }
 
 .content {
