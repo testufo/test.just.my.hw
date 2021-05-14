@@ -38,7 +38,7 @@ code {
     border-radius: 3px;
   }
 .button {
-    background-color: #ffffff00;
+    background-color: transparent;
     color: #3cb45a;
     text-align: center;
     display: inline-block;
@@ -50,8 +50,8 @@ code {
 }
 
 .button:active {
+    color: #ffffff85;
     background-color: #45d368;
-    color: #000;
     text-shadow: none
 }
 .button:hover{
