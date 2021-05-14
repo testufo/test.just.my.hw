@@ -22,13 +22,14 @@
         $get["lastname"] = filter_var($_GET["lastname"], FILTER_SANITIZE_STRING);
         $get["email"] =  filter_var($_GET["email"], FILTER_SANITIZE_EMAIL);
         $get["groop"] = filter_var($_GET['groop'], FILTER_SANITIZE_NUMBER_INT);
-
+        $get["class"] = filter_var($_GET['class'], FILTER_SANITIZE_NUMBER_INT);
         $usermail = $get["email"].'@ch-school33.ukr.education';
         $answers = $_GET;
         unset($answers["firstname"]);
         unset($answers["lastname"]);
         unset($answers["email"]);
         unset($answers["groop"]);
+        unset($answers["calss"]);
         $jsonanswers = json_encode($answers);
         $answers = array_values($answers);
         $c = 0;
@@ -37,7 +38,7 @@
         }
         $mark = round(($c/count($goodanswers))*12);
         $pass = randomPassword();
-        $id = insert($pass, $usermail, $get["firstname"], $get["lastname"], $jsonanswers, $mark, $get["groop"]);
+        $id = insert($pass, $usermail, $get["firstname"], $get["lastname"], $jsonanswers, $mark, $get["groop"], $get["class"]);
         if($id == false){
             echo('<html>
             <head>
