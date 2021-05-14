@@ -29,7 +29,7 @@
         unset($answers["lastname"]);
         unset($answers["email"]);
         unset($answers["groop"]);
-        unset($answers["calss"]);
+        unset($answers["class"]);
         $jsonanswers = json_encode($answers);
         $answers = array_values($answers);
         $c = 0;
