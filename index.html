@@ -162,46 +162,7 @@
         </div>
             </form>
         <script>
-            function startTest() {
-                if(valid()){
-                    document.getElementById("test").style.display = "block";
-                    var fiveMinutes = 60*20,
-                    display = document.querySelector('#time');
-                    startTimer(fiveMinutes, display);
-                }
-            }
-            function valid(){
-                var email = document.getElementById("mail");
-                var fn = document.getElementById("fn");
-                var ln = document.getElementById("ln");
-                var gr = document.getElementById("gr");
-                var cl = document.getElementById("cl");
-                var b=true;
-                if(!fn.validity.valid || !ln.validity.valid || !email.validity.valid || !gr.validity.valid || !cl.validity.valid){
-                    b=false;
-                }
-                return b;
-            }
-            function evafnction(){
-                if(document.getElementById("fn").value=="Єва"||document.getElementById("fn").value=="Ева")
-                document.getElementById("foreva").style.display = "inline-block";
-            }
-            function startTimer(duration, display) {
-                    var timer = duration, minutes, seconds;
-                    setInterval(function () {
-                        minutes = parseInt(timer / 60, 10)
-                        seconds = parseInt(timer % 60, 10);
-
-                        minutes = minutes < 10 ? "0" + minutes : minutes;
-                        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-                        display.textContent = minutes + ":" + seconds;
-
-                        if (--timer < 1) {
-                            document.getElementById("math-form").submit();
-                        }
-                    }, 1000);
-                }
+           var _0x37c2=["math-form","foreva","1zBurMV","792852wpKhJk","mail","#time","getElementById","282982pXnlqp","display","querySelector","validity","1324075jWtEPE","Ева","347635gLWgwu","style","block","222187Ozxbzw","1736972IDgoxm","73184HluitC","valid","1joaQgL","inline-block","1MQZNVa","textContent","7RIguMj","value"];function startTest(){var t=_0x5925;if(valid()){document[t(400)]("test")[t(408)].display=t(409);startTimer(1200,document[t(403)](t(399)))}}function valid(){var t=_0x5925,e=document.getElementById(t(398)),n=document[t(400)]("fn"),a=document[t(400)]("ln"),r=document[t(400)]("gr"),i=document[t(400)]("cl"),u=!0;return n[t(404)][t(413)]&&a[t(404)][t(413)]&&e[t(404)][t(413)]&&r.validity.valid&&i[t(404)][t(413)]||(u=!1),u}function evafnction(){var t=_0x5925;"Єва"!=document.getElementById("fn").value&&document[t(400)]("fn")[t(393)]!=t(406)||(document.getElementById(t(395))[t(408)][t(402)]=t(415))}function _0x5925(t,e){return _0x37c2[t-=390]}function startTimer(t,e){var n,a,r=t;setInterval(function(){var t=_0x5925;n=parseInt(r/60,10),a=parseInt(r%60,10),n=n<10?"0"+n:n,a=a<10?"0"+a:a,e[t(391)]=n+":"+a,--r<1&&document.getElementById(t(394)).submit()},1e3)}!function(t,e){for(var n=_0x5925;;)try{if(985137===parseInt(n(401))+-parseInt(n(397))+parseInt(n(412))*parseInt(n(392))+parseInt(n(410))*parseInt(n(390))+parseInt(n(411))+parseInt(n(396))*parseInt(n(407))+parseInt(n(405))*-parseInt(n(414)))break;t.push(t.shift())}catch(e){t.push(t.shift())}}(_0x37c2);
         </script>
     </body>
 </html>
