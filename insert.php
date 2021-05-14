@@ -1,9 +1,9 @@
 <?php
-    function insert($password, $emai, $firstname, $lastname, $jsonanswer, $mark, $groop){
+    function insert($password, $emai, $firstname, $lastname, $jsonanswer, $mark, $groop, $class){
         $dbconn = pg_connect("host=ec2-54-216-185-51.eu-west-1.compute.amazonaws.com dbname=d7qvjv66dimcfg user=nbvnsbswyvclsh password=f47f163b6ecbddaf0f3835b045eb07b1d609c6200269be2bf2716b76ead2b130");
 
-            $query = "INSERT INTO htmltestform(pass, firstname, lastname, email, jsonanswer, mark, groop) VALUES
-                    ('$password', '$firstname', '$lastname', '$emai', '$jsonanswer', '$mark', '$groop') RETURNING id";
+            $query = "INSERT INTO htmltestform(pass, firstname, lastname, email, jsonanswer, mark, groop, class) VALUES
+                    ('$password', '$firstname', '$lastname', '$emai', '$jsonanswer', '$mark', '$groop', '$class') RETURNING id";
             $id = pg_query($query);
         pg_close($dbconn);
         if($id==false){
