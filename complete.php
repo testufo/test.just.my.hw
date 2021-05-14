@@ -36,7 +36,7 @@
         for ($i = 0; $i < count($goodanswers); $i++) {
             if($answers[$i]==$goodanswers[$i]) $c++;
         }
-        $mark = round(($c/count($goodanswers))*12);
+        $mark = ceil(($c/count($goodanswers))*12);
         $pass = randomPassword();
         $id = insert($pass, $usermail, $get["firstname"], $get["lastname"], $jsonanswers, $mark, $get["groop"], $get["class"]);
         if($id == false){
