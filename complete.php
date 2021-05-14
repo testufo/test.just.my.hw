@@ -22,7 +22,7 @@
         $get["lastname"] = filter_var($_GET["lastname"], FILTER_SANITIZE_STRING);
         $get["email"] =  filter_var($_GET["email"], FILTER_SANITIZE_EMAIL);
         $get["groop"] = filter_var($_GET['groop'], FILTER_SANITIZE_NUMBER_INT);
-        $get["class"] = filter_var($_GET['class'], FILTER_SANITIZE_NUMBER_INT);
+        $get["class"] = filter_var($_GET['class'], FILTER_SANITIZE_STRING);
         $usermail = $get["email"].'@ch-school33.ukr.education';
         $answers = $_GET;
         unset($answers["firstname"]);
