@@ -3,7 +3,7 @@
     include 'sendmail.php';
 
     $goodanswers=str_split("ccabbabccbbbbcb");
-    if(empty($_GET)){
+    if(empty($_GET)&&empty($_POST)){
         echo('<html>
         <head>
         <title> Результати </title>
@@ -17,14 +17,14 @@
         </html>');
         die();
     }
-    if(!empty($_GET['firstname'])&&!empty($_GET['lastname'])&&!empty($_GET['email'])){
-        $get["firstname"] = filter_var($_GET["firstname"], FILTER_SANITIZE_STRING);
-        $get["lastname"] = filter_var($_GET["lastname"], FILTER_SANITIZE_STRING);
-        $get["email"] =  filter_var($_GET["email"], FILTER_SANITIZE_EMAIL);
-        $get["groop"] = filter_var($_GET['groop'], FILTER_SANITIZE_NUMBER_INT);
-        $get["class"] = filter_var($_GET['class'], FILTER_SANITIZE_STRING);
+    if(!empty($_POST['firstname'])&&!empty($_POST['lastname'])&&!empty($_POST['email'])){
+        $get["firstname"] = filter_var($_POST["firstname"], FILTER_SANITIZE_STRING);
+        $get["lastname"] = filter_var($_POST["lastname"], FILTER_SANITIZE_STRING);
+        $get["email"] =  filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+        $get["groop"] = filter_var($_POST['groop'], FILTER_SANITIZE_NUMBER_INT);
+        $get["class"] = filter_var($_POST['class'], FILTER_SANITIZE_STRING);
         $usermail = $get["email"].'@ch-school33.ukr.education';
-        $answers = $_GET;
+        $answers = $_POST;
         unset($answers["firstname"]);
         unset($answers["lastname"]);
         unset($answers["email"]);
