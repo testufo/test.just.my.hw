@@ -127,11 +127,11 @@
                         }?>
         <h2 align=center>Друга група</h2>
         <?php 
-                $n1=0;
+                $n0 = 0;
                 foreach($secondgroopb as $arr1){
                     if($arr1!=null){
                         $n1++;
-                        echo('<div class="content" style="border-width: 1px"><p>'.$n1.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
+                        echo('<div class="content" style="border-width: 1px"><p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
                     }
                 }?>
                 </div>
@@ -147,16 +147,16 @@
                         foreach($firstgoopa as $arr1){
                             if($arr1!=null){
                                 $n2++;
-                                echo('<div class="content" style="border-width: 1px"><p>'.$n2.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
+                                echo('<div class="content" style="border-width: 1px"><p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
                             }
                         }?>
         <h2 align=center>Друга група</h2>
         <?php 
-                $n1=0;
+                $n0 = 0;
                 foreach($secondgroopa as $arr1){
                     if($arr1!=null){
                         $n3++;
-                        echo('<div class="content" style="border-width: 1px"><p>'.$n3.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
+                        echo('<div class="content" style="border-width: 1px"><p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
                     }
                 }?>
                 </div>
