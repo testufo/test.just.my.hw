@@ -55,6 +55,7 @@
         }
         sendmail($id, $pass, $usermail);
         header("LOCATION: /complete.php?id=$id&password=$pass");
+        die();
     }
     else if(!empty($_GET['id'])&&!empty($_GET['password'])){
         $get["password"] = filter_var($_GET['password'], FILTER_SANITIZE_STRING);
