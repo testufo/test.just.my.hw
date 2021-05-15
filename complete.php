@@ -67,7 +67,11 @@ try {
         $firstname = $details[0];
         $lastname = $details[1];
         $answers = json_decode($jsonanswers, true);
-        $answers = array_values($answers);
+        if(!empty($answers))
+             $answers = array_values($answers);
+        else
+            throw new Exception("Error Processing Request", 1);
+            
         $c = 0;
         for ($i = 0; $i < count($goodanswers); $i++) {
             if($answers[$i]==$goodanswers[$i]) $c++;
