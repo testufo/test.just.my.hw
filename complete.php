@@ -130,7 +130,7 @@
                 $n0 = 0;
                 foreach($secondgroopb as $arr1){
                     if($arr1!=null){
-                        $n1++;
+                        $n0++;
                         echo('<div class="content" style="border-width: 1px"><p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
                     }
                 }?>
@@ -146,7 +146,7 @@
                         $n0 = 0;
                         foreach($firstgoopa as $arr1){
                             if($arr1!=null){
-                                $n2++;
+                                $n0++;
                                 echo('<div class="content" style="border-width: 1px"><p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
                             }
                         }?>
@@ -155,7 +155,7 @@
                 $n0 = 0;
                 foreach($secondgroopa as $arr1){
                     if($arr1!=null){
-                        $n3++;
+                        $n0++;
                         echo('<div class="content" style="border-width: 1px"><p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
                     }
                 }?>
