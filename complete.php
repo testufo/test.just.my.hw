@@ -1,5 +1,4 @@
 <?php
-try {
     include 'insert.php';
     include 'sendmail.php';
 
@@ -67,11 +66,14 @@ try {
         $firstname = $details[0];
         $lastname = $details[1];
         $answers = json_decode($jsonanswers, true);
-        if(!empty($answers))
+        if(!empty($answers)){
              $answers = array_values($answers);
-        else
-            throw new Exception("Error Processing Request", 1);
-            
+        }
+        else{
+            echo (file_get_contents("/areyou.html"));
+            http_response_code(403);
+            die();
+        }
         $c = 0;
         for ($i = 0; $i < count($goodanswers); $i++) {
             if($answers[$i]==$goodanswers[$i]) $c++;
@@ -98,11 +100,6 @@ try {
     $secondgroopb = getothers(2,"b");
     $firstgoopa = getothers(1,"a");
     $secondgroopa = getothers(2,"a");
-}
-catch(Exception $e){
-    http_response_code(403);
-    die();
-}
 ?>
 <html>
     <head>
