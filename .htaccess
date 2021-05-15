@@ -2,7 +2,6 @@
 Options -Indexes
 ErrorDocument 404 /kryak.html
 ErrorDocument 403 /areyou.html
-ErrorDocument 500 /areyou.html
 
 <IfModule mod_filter.c>
 
