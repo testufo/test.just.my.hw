@@ -70,7 +70,7 @@
              $answers = array_values($answers);
         }
         else{
-            echo (file_get_contents("/areyou.html"));
+            echo (file_get_contents("./areyou.html"));
             die();
         }
         $c = 0;
