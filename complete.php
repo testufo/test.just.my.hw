@@ -146,8 +146,8 @@
                         $n0 = 0;
                         foreach($firstgoopa as $arr1){
                             if($arr1!=null){
-                                $n0++;
-                                echo('<div class="content" style="border-width: 1px"><p>'.$n0.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
+                                $n2++;
+                                echo('<div class="content" style="border-width: 1px"><p>'.$n2.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
                             }
                         }?>
         <h2 align=center>Друга група</h2>
@@ -155,8 +155,8 @@
                 $n1=0;
                 foreach($secondgroopa as $arr1){
                     if($arr1!=null){
-                        $n1++;
-                        echo('<div class="content" style="border-width: 1px"><p>'.$n1.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
+                        $n3++;
+                        echo('<div class="content" style="border-width: 1px"><p>'.$n3.'. '.$arr1["firstname"].' '.$arr1["lastname"].' --- '.$arr1["mark"].' Б</p></div>');
                     }
                 }?>
                 </div>
