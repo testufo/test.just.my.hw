@@ -95,7 +95,7 @@ try {
     $firstgoopa = getothers(1,"a");
     $secondgroopa = getothers(2,"a");
 }
-catch{
+catch(){
     http_response_code(500);
 }
 ?>
