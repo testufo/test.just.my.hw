@@ -71,7 +71,6 @@
         }
         else{
             echo (file_get_contents("/areyou.html"));
-            http_response_code(403);
             die();
         }
         $c = 0;
