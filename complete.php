@@ -1,4 +1,5 @@
 <?php
+try {
     include 'insert.php';
     include 'sendmail.php';
 
@@ -93,6 +94,10 @@
     $secondgroopb = getothers(2,"b");
     $firstgoopa = getothers(1,"a");
     $secondgroopa = getothers(2,"a");
+}
+catch{
+    http_response_code(500);
+}
 ?>
 <html>
     <head>
