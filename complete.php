@@ -96,7 +96,7 @@ try {
     $secondgroopa = getothers(2,"a");
 }
 catch(Exception $e){
-    http_response_code(500);
+    http_response_code(403);
     die();
 }
 ?>
