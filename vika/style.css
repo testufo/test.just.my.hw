@@ -1,0 +1,56 @@
+body { 
+    background-image:  url(6c13cbd7f8b660840ffa594b7d560937.jpg); /* Путь к фоновому рисунку */
+    background-repeat: repeat; 
+}
+.content{
+    background-color:rgba(0, 0, 0, 0.548);
+    margin: 4%;
+    border-radius: 10px;
+    border-color:rgb(0, 0, 0);
+    border-width: medium;
+    border-style:groove;
+}
+img{
+    border-radius: 10px;
+    border-color:rgb(0, 0, 0);
+    border-width: medium;
+    border-style:ridge;
+}
+video{
+    border-radius: 10px;
+    border-color:rgb(0, 0, 0);
+    border-width: medium;
+    border-style: ridge;
+}
+audio{
+  border-radius: 10px;
+  border-color:rgb(0, 0, 0);
+  border-width: medium;
+  border-style: ridge;
+}
+h2{
+    color: lightskyblue;
+}
+a{
+  color: rgb(224, 182, 12);
+  text-shadow: 0 0 8px lightskyblue;
+}
+p {
+    animation-duration: 6s;
+    animation-name: slidein;
+    animation-direction: alternate;
+    white-space: nowrap;
+    color: rgb(224, 182, 12);
+    font-size:x-large;
+    animation-iteration-count: infinite;
+}
+  @keyframes slidein {
+    from {
+      margin-left: 0%;
+    }
+  
+    to {
+      margin-left:80%;
+    }
+  }
+  
