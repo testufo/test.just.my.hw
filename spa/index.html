@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/src/styles/style.css">
-        <link rel="stylesheet" href="/src/styles/adaptive_header.css">
+        <link rel="stylesheet" href="./src/styles/style.css">
+        <link rel="stylesheet" href="./src/styles/adaptive_header.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Raspberry Web Server</title>
     </head>
     <body>
         <header>
             <div class="logo">
-              <a onclick="ps('?loc=/pages/main.html','content')"><img style="border: none; padding-top: 10px;" src="/src/images/logo.webp"></a>
+              <a onclick="ps('?loc=./pages/main.html','content')"><img style="border: none; padding-top: 10px;" src="./src/images/logo.webp"></a>
             </div>
             <div class="menu">
                <ul>
-                <li> <button type="button" onclick="ps('?loc=/pages/posts.html', 'content')" class="button">Posts</button></li>
+                <li> <button type="button" onclick="ps('?loc=./pages/posts.html', 'content')" class="button">Posts</button></li>
               <!-- <li> <button type="button" onclick="ps('?loc=/pages/contact.html', 'content')" class="button">Pages</button></li>--> 
-                <li> <button type="button" onclick="ps('?loc=/pages/contact.html', 'content')" class="button">Contact</button></li>
-                <li> <button type="button" onclick="ps('?loc=/pages/aboutme.html', 'content')" class="button">About me</button></li>
+                <li> <button type="button" onclick="ps('?loc=./pages/contact.html', 'content')" class="button">Contact</button></li>
+                <li> <button type="button" onclick="ps('?loc=./pages/aboutme.html', 'content')" class="button">About me</button></li>
                </ul>
             </div>
         </header>
@@ -40,12 +40,12 @@
                 if(window.location.search)
                     httpGet(new URL(window.location).searchParams.get('loc'),'content');
                 else
-                    httpGet('/pages/main.html','content');
+                    httpGet('./pages/main.html','content');
             };
             if(window.location.search)
                 httpGet(new URL(window.location).searchParams.get('loc'),'content');
             else
-               httpGet('/pages/main.html','content');
+               httpGet('./pages/main.html','content');
         </script>
     </body>
 </html>
