@@ -47,6 +47,13 @@
             else
                httpGet('./pages/main.html','content');
         </script>
-        <footer>Школа тратата</footer>
+        <footer> <div class="menu">
+               <ul>
+                <li> <button type="button" onclick="ps('?loc=./pages/posts.html', 'content')" class="button">Posts</button></li>
+              <!-- <li> <button type="button" onclick="ps('?loc=/pages/contact.html', 'content')" class="button">Pages</button></li>--> 
+                <li> <button type="button" onclick="ps('?loc=./pages/contact.html', 'content')" class="button">Contact</button></li>
+                <li> <button type="button" onclick="ps('?loc=./pages/aboutme.html', 'content')" class="button">About me</button></li>
+               </ul>
+            </div></footer>
     </body>
 </html>
