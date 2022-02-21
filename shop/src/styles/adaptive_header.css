@@ -1,4 +1,13 @@
-header,footer {
+header {
+    border-radius: 5px;
+    border-style: outset;
+	width:100%;
+	float: left;
+	text-align:center;
+	background-color: #ffffff85;
+    position: relative;
+}
+footer{
     border-radius: 5px;
     border-style: outset;
 	width:100%;
@@ -31,8 +40,11 @@ list-style-type:none;
 display:inline-block;
 }
 @media only screen and (max-width: 590px) {
-	header,footer
+	header
 	{
+		font-size:14px;
+	}
+	footer{
 		font-size:14px;
 	}
 	.logo
@@ -53,9 +65,12 @@ display:inline-block;
 	}
 }
 @media only screen and (max-width: 320px) {
-	header,footer
+	header
 	{
 		font-size:12px;
+	}
+	footer{
+		font-size:14px;
 	}
 	.menu ul li
 	{
