@@ -6,7 +6,7 @@ body{
     border-radius: 5px;
     border-width: 3px
 }
-header {
+header,footer {
     background: rgba(255,255,255,.7);
     position: fixed;
     border-radius: 15px;
