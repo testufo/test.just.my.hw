@@ -23,7 +23,7 @@
         $get["email"] =  filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
         $get["groop"] = filter_var($_POST['groop'], FILTER_SANITIZE_NUMBER_INT);
         $get["class"] = filter_var($_POST['class'], FILTER_SANITIZE_STRING);
-        $usermail = $get["email"].'@ch-school33.ukr.education';
+        $usermail = $get["email"];
         $answers = $_POST;
         unset($answers["firstname"]);
         unset($answers["lastname"]);
